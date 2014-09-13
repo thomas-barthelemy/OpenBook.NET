@@ -1,0 +1,22 @@
+﻿{
+    "Count": 0,
+    "CultureCode": "en-gb",
+    "Pagination": {
+        "CultureCode": "en-gb",
+        "CurrentPage": 1,
+        "CurrentPageResults": 0,
+        "MaxItemsPerPage": 10,
+        "Resources": {
+            "first": "First",
+            "last": "Last",
+            "more": "More",
+            "next": "Next",
+            "paginationCenter": "of 0 Traders",
+            "prev": "Previous"
+        },
+        "Tag": null,
+        "TotalResults": 0
+    },
+    "Resources": { },
+    "Users": [ ]
+}

@@ -1,0 +1,4328 @@
+﻿{
+    "Configuration": {
+        "AmazonImagesURL": "https://s3.etoro.com/images/",
+        "AntiForgeryTokenSalt": "OQIIRd9dOxty9IDy2iALJs5WPsD3hNDZYSFPXhJX6yA=",
+        "CashierURL": "/Cashier/Login/",
+        "CloudinaryURL": "https://res.cloudinary.com/etoro",
+        "ContactsCountMinimum": 20,
+        "CopyTraderAmountPackages": "100,500,1000",
+        "CouponAmount": 20,
+        "DynamicYeildAccountID": "8765291",
+        "FAPIURL": "https://fapi-real.etoro.com",
+        "FirebaseURL": "https://etoro.firebaseio.com/prod/",
+        "InstrumentsRoutingSymbols": [
+            "eur-usd",
+            "gbp-usd",
+            "nzd-usd",
+            "usd-cad",
+            "usd-jpy",
+            "usd-chf",
+            "aud-usd",
+            "eur-gbp",
+            "eur-chf",
+            "eur-jpy",
+            "gbp-jpy",
+            "eur-aud",
+            "eur-cad",
+            "aud-jpy",
+            "cad-jpy",
+            "chf-jpy",
+            "usd-hkd",
+            "oil",
+            "gold",
+            "silver",
+            "spx500",
+            "nsdq100",
+            "dj30",
+            "uk100",
+            "fra40",
+            "ger30",
+            "aus200",
+            "esp35",
+            "sui30",
+            "eustx50"
+        ],
+        "InstrumentsTags": [
+            {
+                "InstrumentID": 1,
+                "IsTradable": true,
+                "MarketName": "EUR/USD",
+                "Name": "EUR/USD",
+                "TagsText": [
+                    "eurusd",
+                    "$eurusd",
+                    "eur-usd",
+                    "$eur-usd",
+                    "eur/usd",
+                    "$eur/usd"
+                ],
+                "TickerText": "EURUSD",
+                "TypeName": "instrument",
+                "Url": "/markets/eur-usd/"
+            },
+            {
+                "InstrumentID": 2,
+                "IsTradable": true,
+                "MarketName": "GBP/USD",
+                "Name": "GBP/USD",
+                "TagsText": [
+                    "gbpusd",
+                    "$gbpusd",
+                    "gbp-usd",
+                    "$gbp-usd",
+                    "gbp/usd",
+                    "$gbp/usd"
+                ],
+                "TickerText": "GBPUSD",
+                "TypeName": "instrument",
+                "Url": "/markets/gbp-usd/"
+            },
+            {
+                "InstrumentID": 3,
+                "IsTradable": true,
+                "MarketName": "NZD/USD",
+                "Name": "NZD/USD",
+                "TagsText": [
+                    "nzdusd",
+                    "$nzdusd",
+                    "nzd-usd",
+                    "$nzd-usd",
+                    "nzd/usd",
+                    "$nzd/usd"
+                ],
+                "TickerText": "NZDUSD",
+                "TypeName": "instrument",
+                "Url": "/markets/nzd-usd/"
+            },
+            {
+                "InstrumentID": 4,
+                "IsTradable": true,
+                "MarketName": "USD/CAD",
+                "Name": "USD/CAD",
+                "TagsText": [
+                    "usdcad",
+                    "$usdcad",
+                    "usd-cad",
+                    "$usd-cad",
+                    "usd/cad",
+                    "$usd/cad"
+                ],
+                "TickerText": "USDCAD",
+                "TypeName": "instrument",
+                "Url": "/markets/usd-cad/"
+            },
+            {
+                "InstrumentID": 5,
+                "IsTradable": true,
+                "MarketName": "USD/JPY",
+                "Name": "USD/JPY",
+                "TagsText": [
+                    "usdjpy",
+                    "$usdjpy",
+                    "usd-jpy",
+                    "$usd-jpy",
+                    "usd/jpy",
+                    "$usd/jpy"
+                ],
+                "TickerText": "USDJPY",
+                "TypeName": "instrument",
+                "Url": "/markets/usd-jpy/"
+            },
+            {
+                "InstrumentID": 6,
+                "IsTradable": true,
+                "MarketName": "USD/CHF",
+                "Name": "USD/CHF",
+                "TagsText": [
+                    "usdchf",
+                    "$usdchf",
+                    "usd-chf",
+                    "$usd-chf",
+                    "usd/chf",
+                    "$usd/chf"
+                ],
+                "TickerText": "USDCHF",
+                "TypeName": "instrument",
+                "Url": "/markets/usd-chf/"
+            },
+            {
+                "InstrumentID": 7,
+                "IsTradable": true,
+                "MarketName": "AUD/USD",
+                "Name": "AUD/USD",
+                "TagsText": [
+                    "audusd",
+                    "$audusd",
+                    "aud-usd",
+                    "$aud-usd",
+                    "aud/usd",
+                    "$aud/usd"
+                ],
+                "TickerText": "AUDUSD",
+                "TypeName": "instrument",
+                "Url": "/markets/aud-usd/"
+            },
+            {
+                "InstrumentID": 8,
+                "IsTradable": true,
+                "MarketName": "EUR/GBP",
+                "Name": "EUR/GBP",
+                "TagsText": [
+                    "eurgbp",
+                    "$eurgbp",
+                    "eur-gbp",
+                    "$eur-gbp",
+                    "eur/gbp",
+                    "$eur/gbp"
+                ],
+                "TickerText": "EURGBP",
+                "TypeName": "instrument",
+                "Url": "/markets/eur-gbp/"
+            },
+            {
+                "InstrumentID": 9,
+                "IsTradable": true,
+                "MarketName": "EUR/CHF",
+                "Name": "EUR/CHF",
+                "TagsText": [
+                    "eurchf",
+                    "$eurchf",
+                    "eur-chf",
+                    "$eur-chf",
+                    "eur/chf",
+                    "$eur/chf"
+                ],
+                "TickerText": "EURCHF",
+                "TypeName": "instrument",
+                "Url": "/markets/eur-chf/"
+            },
+            {
+                "InstrumentID": 10,
+                "IsTradable": true,
+                "MarketName": "EUR/JPY",
+                "Name": "EUR/JPY",
+                "TagsText": [
+                    "eurjpy",
+                    "$eurjpy",
+                    "eur-jpy",
+                    "$eur-jpy",
+                    "eur/jpy",
+                    "$eur/jpy"
+                ],
+                "TickerText": "EURJPY",
+                "TypeName": "instrument",
+                "Url": "/markets/eur-jpy/"
+            },
+            {
+                "InstrumentID": 11,
+                "IsTradable": true,
+                "MarketName": "GBP/JPY",
+                "Name": "GBP/JPY",
+                "TagsText": [
+                    "gbpjpy",
+                    "$gbpjpy",
+                    "gbp-jpy",
+                    "$gbp-jpy",
+                    "gbp/jpy",
+                    "$gbp/jpy"
+                ],
+                "TickerText": "GBPJPY",
+                "TypeName": "instrument",
+                "Url": "/markets/gbp-jpy/"
+            },
+            {
+                "InstrumentID": 12,
+                "IsTradable": true,
+                "MarketName": "EUR/AUD",
+                "Name": "EUR/AUD",
+                "TagsText": [
+                    "euraud",
+                    "$euraud",
+                    "eur-aud",
+                    "$eur-aud",
+                    "eur/aud",
+                    "$eur/aud"
+                ],
+                "TickerText": "EURAUD",
+                "TypeName": "instrument",
+                "Url": "/markets/eur-aud/"
+            },
+            {
+                "InstrumentID": 13,
+                "IsTradable": true,
+                "MarketName": "EUR/CAD",
+                "Name": "EUR/CAD",
+                "TagsText": [
+                    "eurcad",
+                    "$eurcad",
+                    "eur-cad",
+                    "$eur-cad",
+                    "eur/cad",
+                    "$eur/cad"
+                ],
+                "TickerText": "EURCAD",
+                "TypeName": "instrument",
+                "Url": "/markets/eur-cad/"
+            },
+            {
+                "InstrumentID": 14,
+                "IsTradable": true,
+                "MarketName": "AUD/JPY",
+                "Name": "AUD/JPY",
+                "TagsText": [
+                    "audjpy",
+                    "$audjpy",
+                    "aud-jpy",
+                    "$aud-jpy",
+                    "aud/jpy",
+                    "$aud/jpy"
+                ],
+                "TickerText": "AUDJPY",
+                "TypeName": "instrument",
+                "Url": "/markets/aud-jpy/"
+            },
+            {
+                "InstrumentID": 15,
+                "IsTradable": true,
+                "MarketName": "CAD/JPY",
+                "Name": "CAD/JPY",
+                "TagsText": [
+                    "cadjpy",
+                    "$cadjpy",
+                    "cad-jpy",
+                    "$cad-jpy",
+                    "cad/jpy",
+                    "$cad/jpy"
+                ],
+                "TickerText": "CADJPY",
+                "TypeName": "instrument",
+                "Url": "/markets/cad-jpy/"
+            },
+            {
+                "InstrumentID": 16,
+                "IsTradable": true,
+                "MarketName": "CHF/JPY",
+                "Name": "CHF/JPY",
+                "TagsText": [
+                    "chfjpy",
+                    "$chfjpy",
+                    "chf-jpy",
+                    "$chf-jpy",
+                    "chf/jpy",
+                    "$chf/jpy"
+                ],
+                "TickerText": "CHFJPY",
+                "TypeName": "instrument",
+                "Url": "/markets/chf-jpy/"
+            },
+            {
+                "InstrumentID": 39,
+                "IsTradable": true,
+                "MarketName": "USD/HKD",
+                "Name": "USD/HKD",
+                "TagsText": [
+                    "usdhkd",
+                    "$usdhkd",
+                    "usd/hkd",
+                    "$usd/hkd"
+                ],
+                "TickerText": "USDHKD",
+                "TypeName": "instrument",
+                "Url": "/markets/usd-hkd/"
+            },
+            {
+                "InstrumentID": 17,
+                "IsTradable": true,
+                "MarketName": "Oil",
+                "Name": "OIL",
+                "TagsText": [
+                    "oil",
+                    "$oil"
+                ],
+                "TickerText": "OIL",
+                "TypeName": "instrument",
+                "Url": "/markets/oil/"
+            },
+            {
+                "InstrumentID": 18,
+                "IsTradable": true,
+                "MarketName": "Gold",
+                "Name": "GOLD",
+                "TagsText": [
+                    "gold",
+                    "$gold"
+                ],
+                "TickerText": "GOLD",
+                "TypeName": "instrument",
+                "Url": "/markets/gold/"
+            },
+            {
+                "InstrumentID": 19,
+                "IsTradable": true,
+                "MarketName": "Silver",
+                "Name": "SILVER",
+                "TagsText": [
+                    "silver",
+                    "$silver"
+                ],
+                "TickerText": "SILVER",
+                "TypeName": "instrument",
+                "Url": "/markets/silver/"
+            },
+            {
+                "InstrumentID": 27,
+                "IsTradable": true,
+                "MarketName": "SPX500",
+                "Name": "SPX500",
+                "TagsText": [
+                    "s&p500",
+                    "$s&p500",
+                    "spx500",
+                    "$spx500"
+                ],
+                "TickerText": "SPX500",
+                "TypeName": "instrument",
+                "Url": "/markets/spx500/"
+            },
+            {
+                "InstrumentID": 28,
+                "IsTradable": true,
+                "MarketName": "NSDQ100",
+                "Name": "NSDQ100",
+                "TagsText": [
+                    "nasdaq100",
+                    "$nasdaq100",
+                    "nsdq100",
+                    "$nsdq100"
+                ],
+                "TickerText": "NSDQ100",
+                "TypeName": "instrument",
+                "Url": "/markets/nsdq100/"
+            },
+            {
+                "InstrumentID": 29,
+                "IsTradable": true,
+                "MarketName": "DJ30",
+                "Name": "DJ30",
+                "TagsText": [
+                    "dow30",
+                    "$dow30",
+                    "dj30",
+                    "$dj30"
+                ],
+                "TickerText": "DJ30",
+                "TypeName": "instrument",
+                "Url": "/markets/dj30/"
+            },
+            {
+                "InstrumentID": 30,
+                "IsTradable": true,
+                "MarketName": "UK100",
+                "Name": "UK100",
+                "TagsText": [
+                    "ftse100",
+                    "$ftse100",
+                    "uk100",
+                    "$uk100"
+                ],
+                "TickerText": "UK100",
+                "TypeName": "instrument",
+                "Url": "/markets/uk100/"
+            },
+            {
+                "InstrumentID": 31,
+                "IsTradable": true,
+                "MarketName": "FRA40",
+                "Name": "FRA40",
+                "TagsText": [
+                    "cac40",
+                    "$cac40",
+                    "fra40",
+                    "$fra40"
+                ],
+                "TickerText": "FRA40",
+                "TypeName": "instrument",
+                "Url": "/markets/fra40/"
+            },
+            {
+                "InstrumentID": 32,
+                "IsTradable": true,
+                "MarketName": "GER30",
+                "Name": "GER30",
+                "TagsText": [
+                    "dax30",
+                    "$dax30",
+                    "ger30",
+                    "$ger30"
+                ],
+                "TickerText": "GER30",
+                "TypeName": "instrument",
+                "Url": "/markets/ger30/"
+            },
+            {
+                "InstrumentID": 33,
+                "IsTradable": true,
+                "MarketName": "AUS200",
+                "Name": "AUS200",
+                "TagsText": [
+                    "aus200",
+                    "$aus200"
+                ],
+                "TickerText": "AUS200",
+                "TypeName": "instrument",
+                "Url": "/markets/aus200/"
+            },
+            {
+                "InstrumentID": 34,
+                "IsTradable": true,
+                "MarketName": "ESP35",
+                "Name": "ESP35",
+                "TagsText": [
+                    "esp35",
+                    "$esp35"
+                ],
+                "TickerText": "ESP35",
+                "TypeName": "instrument",
+                "Url": "/markets/esp35/"
+            },
+            {
+                "InstrumentID": 37,
+                "IsTradable": true,
+                "MarketName": "SUI30",
+                "Name": "SUI30",
+                "TagsText": [
+                    "sui30",
+                    "$sui30"
+                ],
+                "TickerText": "SUI30",
+                "TypeName": "instrument",
+                "Url": "/markets/sui30/"
+            },
+            {
+                "InstrumentID": 43,
+                "IsTradable": true,
+                "MarketName": "EUSTX50",
+                "Name": "EUSTX50",
+                "TagsText": [
+                    "eustx50",
+                    "$eustx50"
+                ],
+                "TickerText": "EUSTX50",
+                "TypeName": "instrument",
+                "Url": "/markets/eustx50/"
+            },
+            {
+                "InstrumentID": 1001,
+                "IsTradable": true,
+                "MarketName": "Apple",
+                "Name": "AAPL",
+                "TagsText": [
+                    "apple",
+                    "$apple",
+                    "$aapl"
+                ],
+                "TickerText": "AAPL",
+                "TypeName": "stock",
+                "Url": "/markets/aapl/"
+            },
+            {
+                "InstrumentID": 1002,
+                "IsTradable": true,
+                "MarketName": "Google",
+                "Name": "GOOG",
+                "TagsText": [
+                    "google",
+                    "$google",
+                    "$goog"
+                ],
+                "TickerText": "GOOG",
+                "TypeName": "stock",
+                "Url": "/markets/goog/"
+            },
+            {
+                "InstrumentID": 1003,
+                "IsTradable": true,
+                "MarketName": "Facebook",
+                "Name": "FB",
+                "TagsText": [
+                    "facebook",
+                    "$facebook",
+                    "$fb"
+                ],
+                "TickerText": "FB",
+                "TypeName": "stock",
+                "Url": "/markets/fb/"
+            },
+            {
+                "InstrumentID": 1004,
+                "IsTradable": true,
+                "MarketName": "Microsoft",
+                "Name": "MSFT",
+                "TagsText": [
+                    "microsoft",
+                    "$microsoft",
+                    "$msft"
+                ],
+                "TickerText": "MSFT",
+                "TypeName": "stock",
+                "Url": "/markets/msft/"
+            },
+            {
+                "InstrumentID": 1005,
+                "IsTradable": true,
+                "MarketName": "Amazon",
+                "Name": "AMZN",
+                "TagsText": [
+                    "amazon",
+                    "$amazon",
+                    "$amzn"
+                ],
+                "TickerText": "AMZN",
+                "TypeName": "stock",
+                "Url": "/markets/amzn/"
+            },
+            {
+                "InstrumentID": 1006,
+                "IsTradable": true,
+                "MarketName": "Yahoo",
+                "Name": "YHOO",
+                "TagsText": [
+                    "yahoo",
+                    "$yahoo",
+                    "$yhoo"
+                ],
+                "TickerText": "YHOO",
+                "TypeName": "stock",
+                "Url": "/markets/yhoo/"
+            },
+            {
+                "InstrumentID": 1007,
+                "IsTradable": true,
+                "MarketName": "Zynga",
+                "Name": "ZNGA",
+                "TagsText": [
+                    "zynga",
+                    "$zynga",
+                    "$znga"
+                ],
+                "TickerText": "ZNGA",
+                "TypeName": "stock",
+                "Url": "/markets/znga/"
+            },
+            {
+                "InstrumentID": 1008,
+                "IsTradable": true,
+                "MarketName": "Alcoa",
+                "Name": "AA",
+                "TagsText": [
+                    "alcoa",
+                    "$alcoa",
+                    "$aa"
+                ],
+                "TickerText": "AA",
+                "TypeName": "stock",
+                "Url": "/markets/aa/"
+            },
+            {
+                "InstrumentID": 1009,
+                "IsTradable": true,
+                "MarketName": "American-Express",
+                "Name": "AXP",
+                "TagsText": [
+                    "american express",
+                    "$american express",
+                    "american-express",
+                    "$american-express",
+                    "$axp"
+                ],
+                "TickerText": "AXP",
+                "TypeName": "stock",
+                "Url": "/markets/axp/"
+            },
+            {
+                "InstrumentID": 1010,
+                "IsTradable": true,
+                "MarketName": "Boeing",
+                "Name": "BA",
+                "TagsText": [
+                    "boeing",
+                    "$boeing",
+                    "$ba"
+                ],
+                "TickerText": "BA",
+                "TypeName": "stock",
+                "Url": "/markets/ba/"
+            },
+            {
+                "InstrumentID": 1011,
+                "IsTradable": true,
+                "MarketName": "Bank-of-America",
+                "Name": "BAC",
+                "TagsText": [
+                    "bank of america",
+                    "$bank of america",
+                    "bank-of-america",
+                    "$bank-of-america",
+                    "$bac"
+                ],
+                "TickerText": "BAC",
+                "TypeName": "stock",
+                "Url": "/markets/bac/"
+            },
+            {
+                "InstrumentID": 1012,
+                "IsTradable": true,
+                "MarketName": "Caterpillar",
+                "Name": "CAT",
+                "TagsText": [
+                    "caterpiller",
+                    "$caterpiller",
+                    "caterpillar",
+                    "$caterpillar",
+                    "$cat"
+                ],
+                "TickerText": "CAT",
+                "TypeName": "stock",
+                "Url": "/markets/cat/"
+            },
+            {
+                "InstrumentID": 1013,
+                "IsTradable": true,
+                "MarketName": "Cisco",
+                "Name": "CSCO",
+                "TagsText": [
+                    "cisco",
+                    "$cisco",
+                    "$csco"
+                ],
+                "TickerText": "CSCO",
+                "TypeName": "stock",
+                "Url": "/markets/csco/"
+            },
+            {
+                "InstrumentID": 1014,
+                "IsTradable": true,
+                "MarketName": "Chevron",
+                "Name": "CVX",
+                "TagsText": [
+                    "chevron",
+                    "$chevron",
+                    "$cvx"
+                ],
+                "TickerText": "CVX",
+                "TypeName": "stock",
+                "Url": "/markets/cvx/"
+            },
+            {
+                "InstrumentID": 1015,
+                "IsTradable": true,
+                "MarketName": "Du-Pont",
+                "Name": "DD",
+                "TagsText": [
+                    "dupont",
+                    "$dupont",
+                    "du-pont",
+                    "$du-pont",
+                    "$dd"
+                ],
+                "TickerText": "DD",
+                "TypeName": "stock",
+                "Url": "/markets/dd/"
+            },
+            {
+                "InstrumentID": 1016,
+                "IsTradable": true,
+                "MarketName": "Walt-Disney",
+                "Name": "DIS",
+                "TagsText": [
+                    "disney",
+                    "$disney",
+                    "walt-disney",
+                    "$walt-disney",
+                    "$dis"
+                ],
+                "TickerText": "DIS",
+                "TypeName": "stock",
+                "Url": "/markets/dis/"
+            },
+            {
+                "InstrumentID": 1017,
+                "IsTradable": true,
+                "MarketName": "General-Electric",
+                "Name": "GE",
+                "TagsText": [
+                    "general electric",
+                    "$general electric",
+                    "general-electric",
+                    "$general-electric",
+                    "$ge"
+                ],
+                "TickerText": "GE",
+                "TypeName": "stock",
+                "Url": "/markets/ge/"
+            },
+            {
+                "InstrumentID": 1018,
+                "IsTradable": true,
+                "MarketName": "Home-Depot",
+                "Name": "HD",
+                "TagsText": [
+                    "the home depot",
+                    "$the home depot",
+                    "home-depot",
+                    "$home-depot",
+                    "$hd"
+                ],
+                "TickerText": "HD",
+                "TypeName": "stock",
+                "Url": "/markets/hd/"
+            },
+            {
+                "InstrumentID": 1019,
+                "IsTradable": true,
+                "MarketName": "Hewlett-Packard",
+                "Name": "HPQ",
+                "TagsText": [
+                    "hewlett packard",
+                    "$hewlett packard",
+                    "hewlett-packard",
+                    "$hewlett-packard",
+                    "$hpq"
+                ],
+                "TickerText": "HPQ",
+                "TypeName": "stock",
+                "Url": "/markets/hpq/"
+            },
+            {
+                "InstrumentID": 1020,
+                "IsTradable": true,
+                "MarketName": "IBM",
+                "Name": "IBM",
+                "TagsText": [
+                    "ibm",
+                    "$ibm"
+                ],
+                "TickerText": "IBM",
+                "TypeName": "stock",
+                "Url": "/markets/ibm/"
+            },
+            {
+                "InstrumentID": 1021,
+                "IsTradable": true,
+                "MarketName": "Intel",
+                "Name": "INTC",
+                "TagsText": [
+                    "intel",
+                    "$intel",
+                    "$intc"
+                ],
+                "TickerText": "INTC",
+                "TypeName": "stock",
+                "Url": "/markets/intc/"
+            },
+            {
+                "InstrumentID": 1022,
+                "IsTradable": true,
+                "MarketName": "Johnson&Johnson",
+                "Name": "JNJ",
+                "TagsText": [
+                    "johnson & johnson",
+                    "$johnson & johnson",
+                    "johnson&johnson",
+                    "$johnson&johnson",
+                    "$jnj"
+                ],
+                "TickerText": "JNJ",
+                "TypeName": "stock",
+                "Url": "/markets/jnj/"
+            },
+            {
+                "InstrumentID": 1023,
+                "IsTradable": true,
+                "MarketName": "JPMorgan-Chase",
+                "Name": "JPM",
+                "TagsText": [
+                    "jpmorgan chase",
+                    "$jpmorgan chase",
+                    "jpmorgan-chase",
+                    "$jpmorgan-chase",
+                    "$jpm"
+                ],
+                "TickerText": "JPM",
+                "TypeName": "stock",
+                "Url": "/markets/jpm/"
+            },
+            {
+                "InstrumentID": 1024,
+                "IsTradable": true,
+                "MarketName": "Coca-Cola",
+                "Name": "KO",
+                "TagsText": [
+                    "coca cola",
+                    "$coca cola",
+                    "coca-cola",
+                    "$coca-cola",
+                    "$ko"
+                ],
+                "TickerText": "KO",
+                "TypeName": "stock",
+                "Url": "/markets/ko/"
+            },
+            {
+                "InstrumentID": 1025,
+                "IsTradable": true,
+                "MarketName": "McDonalds",
+                "Name": "MCD",
+                "TagsText": [
+                    "mcdonalds",
+                    "$mcdonalds",
+                    "$mcd"
+                ],
+                "TickerText": "MCD",
+                "TypeName": "stock",
+                "Url": "/markets/mcd/"
+            },
+            {
+                "InstrumentID": 1026,
+                "IsTradable": true,
+                "MarketName": "3M",
+                "Name": "MMM",
+                "TagsText": [
+                    "3m",
+                    "$3m",
+                    "$mmm"
+                ],
+                "TickerText": "MMM",
+                "TypeName": "stock",
+                "Url": "/markets/mmm/"
+            },
+            {
+                "InstrumentID": 1027,
+                "IsTradable": true,
+                "MarketName": "Merck",
+                "Name": "MRK",
+                "TagsText": [
+                    "merck & co",
+                    "$merck & co",
+                    "merck",
+                    "$merck",
+                    "$mrk"
+                ],
+                "TickerText": "MRK",
+                "TypeName": "stock",
+                "Url": "/markets/mrk/"
+            },
+            {
+                "InstrumentID": 1028,
+                "IsTradable": true,
+                "MarketName": "Pfizer",
+                "Name": "PFE",
+                "TagsText": [
+                    "pfizer",
+                    "$pfizer",
+                    "$pfe"
+                ],
+                "TickerText": "PFE",
+                "TypeName": "stock",
+                "Url": "/markets/pfe/"
+            },
+            {
+                "InstrumentID": 1029,
+                "IsTradable": true,
+                "MarketName": "Procter&Gamble",
+                "Name": "PG",
+                "TagsText": [
+                    "procter & gamble",
+                    "$procter & gamble",
+                    "procter&gamble",
+                    "$procter&gamble",
+                    "$pg"
+                ],
+                "TickerText": "PG",
+                "TypeName": "stock",
+                "Url": "/markets/pg/"
+            },
+            {
+                "InstrumentID": 1030,
+                "IsTradable": true,
+                "MarketName": "AT&T",
+                "Name": "T",
+                "TagsText": [
+                    "at&t",
+                    "$at&t",
+                    "$t"
+                ],
+                "TickerText": "T",
+                "TypeName": "stock",
+                "Url": "/markets/t/"
+            },
+            {
+                "InstrumentID": 1031,
+                "IsTradable": true,
+                "MarketName": "Travelers",
+                "Name": "TRV",
+                "TagsText": [
+                    "the travelers companies",
+                    "$the travelers companies",
+                    "travelers",
+                    "$travelers",
+                    "$trv"
+                ],
+                "TickerText": "TRV",
+                "TypeName": "stock",
+                "Url": "/markets/trv/"
+            },
+            {
+                "InstrumentID": 1032,
+                "IsTradable": true,
+                "MarketName": "UnitedHealth",
+                "Name": "UNH",
+                "TagsText": [
+                    "united health group",
+                    "$united health group",
+                    "unitedhealth",
+                    "$unitedhealth",
+                    "$unh"
+                ],
+                "TickerText": "UNH",
+                "TypeName": "stock",
+                "Url": "/markets/unh/"
+            },
+            {
+                "InstrumentID": 1033,
+                "IsTradable": true,
+                "MarketName": "United-Technologies",
+                "Name": "UTX",
+                "TagsText": [
+                    "united technologies",
+                    "$united technologies",
+                    "united-technologies",
+                    "$united-technologies",
+                    "$utx"
+                ],
+                "TickerText": "UTX",
+                "TypeName": "stock",
+                "Url": "/markets/utx/"
+            },
+            {
+                "InstrumentID": 1034,
+                "IsTradable": true,
+                "MarketName": "Verizon",
+                "Name": "VZ",
+                "TagsText": [
+                    "verizon",
+                    "$verizon",
+                    "$vz"
+                ],
+                "TickerText": "VZ",
+                "TypeName": "stock",
+                "Url": "/markets/vz/"
+            },
+            {
+                "InstrumentID": 1035,
+                "IsTradable": true,
+                "MarketName": "Wal-Mart",
+                "Name": "WMT",
+                "TagsText": [
+                    "wal mart",
+                    "$wal mart",
+                    "wal-mart",
+                    "$wal-mart",
+                    "$wmt"
+                ],
+                "TickerText": "WMT",
+                "TypeName": "stock",
+                "Url": "/markets/wmt/"
+            },
+            {
+                "InstrumentID": 1036,
+                "IsTradable": true,
+                "MarketName": "Exxon-Mobil",
+                "Name": "XOM",
+                "TagsText": [
+                    "exxon mobil",
+                    "$exxon mobil",
+                    "exxon-mobil",
+                    "$exxon-mobil",
+                    "$xom"
+                ],
+                "TickerText": "XOM",
+                "TypeName": "stock",
+                "Url": "/markets/xom/"
+            },
+            {
+                "InstrumentID": 1037,
+                "IsTradable": true,
+                "MarketName": "Citigroup",
+                "Name": "C",
+                "TagsText": [
+                    "citigroup",
+                    "$citigroup",
+                    "$c"
+                ],
+                "TickerText": "C",
+                "TypeName": "stock",
+                "Url": "/markets/c/"
+            },
+            {
+                "InstrumentID": 1038,
+                "IsTradable": true,
+                "MarketName": "Honda",
+                "Name": "HMC",
+                "TagsText": [
+                    "honda",
+                    "$honda",
+                    "$hmc"
+                ],
+                "TickerText": "HMC",
+                "TypeName": "stock",
+                "Url": "/markets/hmc/"
+            },
+            {
+                "InstrumentID": 1039,
+                "IsTradable": true,
+                "MarketName": "HSBC",
+                "Name": "HBC",
+                "TagsText": [
+                    "hsbc",
+                    "$hsbc",
+                    "$hbc"
+                ],
+                "TickerText": "HBC",
+                "TypeName": "stock",
+                "Url": "/markets/hbc/"
+            },
+            {
+                "InstrumentID": 1040,
+                "IsTradable": true,
+                "MarketName": "Manchester United",
+                "Name": "MANU",
+                "TagsText": [
+                    "manchester united",
+                    "$manchester united",
+                    "$manu"
+                ],
+                "TickerText": "MANU",
+                "TypeName": "stock",
+                "Url": "/markets/manu/"
+            },
+            {
+                "InstrumentID": 1041,
+                "IsTradable": true,
+                "MarketName": "Mastercard",
+                "Name": "MA",
+                "TagsText": [
+                    "mastercard",
+                    "$mastercard",
+                    "$ma"
+                ],
+                "TickerText": "MA",
+                "TypeName": "stock",
+                "Url": "/markets/ma/"
+            },
+            {
+                "InstrumentID": 1042,
+                "IsTradable": true,
+                "MarketName": "NIKE",
+                "Name": "NKE",
+                "TagsText": [
+                    "nike",
+                    "$nike",
+                    "$nke"
+                ],
+                "TickerText": "NKE",
+                "TypeName": "stock",
+                "Url": "/markets/nke/"
+            },
+            {
+                "InstrumentID": 1043,
+                "IsTradable": true,
+                "MarketName": "PepsiCo",
+                "Name": "PEP",
+                "TagsText": [
+                    "pepsi",
+                    "$pepsi",
+                    "pepsico",
+                    "$pepsico",
+                    "$pep"
+                ],
+                "TickerText": "PEP",
+                "TypeName": "stock",
+                "Url": "/markets/pep/"
+            },
+            {
+                "InstrumentID": 1044,
+                "IsTradable": true,
+                "MarketName": "Sony",
+                "Name": "SNE",
+                "TagsText": [
+                    "sony",
+                    "$sony",
+                    "$sne"
+                ],
+                "TickerText": "SNE",
+                "TypeName": "stock",
+                "Url": "/markets/sne/"
+            },
+            {
+                "InstrumentID": 1045,
+                "IsTradable": true,
+                "MarketName": "Toyota",
+                "Name": "TM",
+                "TagsText": [
+                    "toyota",
+                    "$toyota",
+                    "$tm"
+                ],
+                "TickerText": "TM",
+                "TypeName": "stock",
+                "Url": "/markets/tm/"
+            },
+            {
+                "InstrumentID": 1046,
+                "IsTradable": true,
+                "MarketName": "Visa",
+                "Name": "V",
+                "TagsText": [
+                    "visa",
+                    "$visa",
+                    "$v"
+                ],
+                "TickerText": "V",
+                "TypeName": "stock",
+                "Url": "/markets/v/"
+            },
+            {
+                "InstrumentID": 1047,
+                "IsTradable": true,
+                "MarketName": "Vodafone",
+                "Name": "VOD",
+                "TagsText": [
+                    "vodafone",
+                    "$vodafone",
+                    "$vod"
+                ],
+                "TickerText": "VOD",
+                "TypeName": "stock",
+                "Url": "/markets/vod/"
+            },
+            {
+                "InstrumentID": 1048,
+                "IsTradable": true,
+                "MarketName": "Time-Warner",
+                "Name": "TWX",
+                "TagsText": [
+                    "time-warner",
+                    "$time-warner",
+                    "$twx"
+                ],
+                "TickerText": "TWX",
+                "TypeName": "stock",
+                "Url": "/markets/twx/"
+            },
+            {
+                "InstrumentID": 1049,
+                "IsTradable": true,
+                "MarketName": "Deutsche-Bank",
+                "Name": "DB",
+                "TagsText": [
+                    "deutsche bank",
+                    "$deutsche bank",
+                    "deutsche-bank",
+                    "$deutsche-bank",
+                    "$db"
+                ],
+                "TickerText": "DB",
+                "TypeName": "stock",
+                "Url": "/markets/db/"
+            },
+            {
+                "InstrumentID": 1050,
+                "IsTradable": true,
+                "MarketName": "Colgate-Palmolive",
+                "Name": "CL",
+                "TagsText": [
+                    "colgate palmolive",
+                    "$colgate palmolive",
+                    "colgate-palmolive",
+                    "$colgate-palmolive",
+                    "$cl"
+                ],
+                "TickerText": "CL",
+                "TypeName": "stock",
+                "Url": "/markets/cl/"
+            },
+            {
+                "InstrumentID": 1051,
+                "IsTradable": true,
+                "MarketName": "eBay",
+                "Name": "EBAY",
+                "TagsText": [
+                    "ebay",
+                    "$ebay"
+                ],
+                "TickerText": "EBAY",
+                "TypeName": "stock",
+                "Url": "/markets/ebay/"
+            },
+            {
+                "InstrumentID": 1052,
+                "IsTradable": false,
+                "MarketName": "Siemens",
+                "Name": "SI",
+                "TagsText": [
+                    "siemens",
+                    "$siemens",
+                    "$si"
+                ],
+                "TickerText": "SI",
+                "TypeName": "stock",
+                "Url": "/markets/si/"
+            },
+            {
+                "InstrumentID": 1100,
+                "IsTradable": true,
+                "MarketName": "Telecom Argentina SA",
+                "Name": "TEO",
+                "TagsText": [
+                    "telecom argentina sa",
+                    "$telecom argentina sa",
+                    "$teo"
+                ],
+                "TickerText": "TEO",
+                "TypeName": "stock",
+                "Url": "/markets/teo/"
+            },
+            {
+                "InstrumentID": 1101,
+                "IsTradable": true,
+                "MarketName": "Ternium SA",
+                "Name": "TX",
+                "TagsText": [
+                    "ternium sa",
+                    "$ternium sa",
+                    "$tx"
+                ],
+                "TickerText": "TX",
+                "TypeName": "stock",
+                "Url": "/markets/tx/"
+            },
+            {
+                "InstrumentID": 1102,
+                "IsTradable": true,
+                "MarketName": "Petroleo Brasileiro SA Petrobras",
+                "Name": "PBR",
+                "TagsText": [
+                    "petroleo brasileiro sa petrobras",
+                    "$petroleo brasileiro sa petrobras",
+                    "$pbr"
+                ],
+                "TickerText": "PBR",
+                "TypeName": "stock",
+                "Url": "/markets/pbr/"
+            },
+            {
+                "InstrumentID": 1103,
+                "IsTradable": true,
+                "MarketName": "Vale SA",
+                "Name": "VALE",
+                "TagsText": [
+                    "vale sa",
+                    "$vale sa",
+                    "$vale"
+                ],
+                "TickerText": "VALE",
+                "TypeName": "stock",
+                "Url": "/markets/vale/"
+            },
+            {
+                "InstrumentID": 1104,
+                "IsTradable": true,
+                "MarketName": "Banco Santander SA",
+                "Name": "SAN",
+                "TagsText": [
+                    "banco santander sa",
+                    "$banco santander sa",
+                    "$san"
+                ],
+                "TickerText": "SAN",
+                "TypeName": "stock",
+                "Url": "/markets/san/"
+            },
+            {
+                "InstrumentID": 1105,
+                "IsTradable": true,
+                "MarketName": "Telefonica SA",
+                "Name": "TEF",
+                "TagsText": [
+                    "telefonica sa",
+                    "$telefonica sa",
+                    "$tef"
+                ],
+                "TickerText": "TEF",
+                "TypeName": "stock",
+                "Url": "/markets/tef/"
+            },
+            {
+                "InstrumentID": 1106,
+                "IsTradable": true,
+                "MarketName": "America Movil, S.A.B. de C.V.",
+                "Name": "AMX",
+                "TagsText": [
+                    "america movil, s.a.b. de c.v.",
+                    "$america movil, s.a.b. de c.v.",
+                    "$amx"
+                ],
+                "TickerText": "AMX",
+                "TypeName": "stock",
+                "Url": "/markets/amx/"
+            },
+            {
+                "InstrumentID": 1107,
+                "IsTradable": true,
+                "MarketName": "Cemex, S.A.B. de C.V.",
+                "Name": "CX",
+                "TagsText": [
+                    "cemex, s.a.b. de c.v.",
+                    "$cemex, s.a.b. de c.v.",
+                    "$cx"
+                ],
+                "TickerText": "CX",
+                "TypeName": "stock",
+                "Url": "/markets/cx/"
+            },
+            {
+                "InstrumentID": 1108,
+                "IsTradable": false,
+                "MarketName": "Directv",
+                "Name": "DTV",
+                "TagsText": [
+                    "directv",
+                    "$directv",
+                    "$dtv"
+                ],
+                "TickerText": "DTV",
+                "TypeName": "stock",
+                "Url": "/markets/dtv/"
+            },
+            {
+                "InstrumentID": 1109,
+                "IsTradable": true,
+                "MarketName": "Grupo Televisa, S.A.B.",
+                "Name": "TV",
+                "TagsText": [
+                    "grupo televisa, s.a.b.",
+                    "$grupo televisa, s.a.b.",
+                    "$tv"
+                ],
+                "TickerText": "TV",
+                "TypeName": "stock",
+                "Url": "/markets/tv/"
+            },
+            {
+                "InstrumentID": 1110,
+                "IsTradable": true,
+                "MarketName": "SanDisk Corp",
+                "Name": "SNDK",
+                "TagsText": [
+                    "sandisk corp",
+                    "$sandisk corp",
+                    "$sndk"
+                ],
+                "TickerText": "SNDK",
+                "TypeName": "stock",
+                "Url": "/markets/sndk/"
+            },
+            {
+                "InstrumentID": 1111,
+                "IsTradable": true,
+                "MarketName": "Tesla Motors, Inc.",
+                "Name": "TSLA",
+                "TagsText": [
+                    "tesla motors, inc.",
+                    "$tesla motors, inc.",
+                    "$tsla"
+                ],
+                "TickerText": "TSLA",
+                "TypeName": "stock",
+                "Url": "/markets/tsla/"
+            },
+            {
+                "InstrumentID": 1112,
+                "IsTradable": true,
+                "MarketName": "Ford Motor Co",
+                "Name": "F",
+                "TagsText": [
+                    "ford motor co",
+                    "$ford motor co",
+                    "$f"
+                ],
+                "TickerText": "F",
+                "TypeName": "stock",
+                "Url": "/markets/f/"
+            },
+            {
+                "InstrumentID": 1113,
+                "IsTradable": true,
+                "MarketName": "Las Vegas Sands Corp",
+                "Name": "LVS",
+                "TagsText": [
+                    "las vegas sands corp",
+                    "$las vegas sands corp",
+                    "$lvs"
+                ],
+                "TickerText": "LVS",
+                "TypeName": "stock",
+                "Url": "/markets/lvs/"
+            },
+            {
+                "InstrumentID": 1114,
+                "IsTradable": true,
+                "MarketName": "LinkedIn Corp",
+                "Name": "LNKD",
+                "TagsText": [
+                    "linkedin corp",
+                    "$linkedin corp",
+                    "$lnkd"
+                ],
+                "TickerText": "LNKD",
+                "TypeName": "stock",
+                "Url": "/markets/lnkd/"
+            },
+            {
+                "InstrumentID": 1115,
+                "IsTradable": true,
+                "MarketName": "Nokia Oyj",
+                "Name": "NOK",
+                "TagsText": [
+                    "nokia oyj",
+                    "$nokia oyj",
+                    "$nok"
+                ],
+                "TickerText": "NOK",
+                "TypeName": "stock",
+                "Url": "/markets/nok/"
+            },
+            {
+                "InstrumentID": 1116,
+                "IsTradable": true,
+                "MarketName": "Potash Corporation of Saskatchewan",
+                "Name": "POT",
+                "TagsText": [
+                    "potash corporation of saskatchewan",
+                    "$potash corporation of saskatchewan",
+                    "$pot"
+                ],
+                "TickerText": "POT",
+                "TypeName": "stock",
+                "Url": "/markets/pot/"
+            },
+            {
+                "InstrumentID": 1117,
+                "IsTradable": true,
+                "MarketName": "First Solar, Inc.",
+                "Name": "FSLR",
+                "TagsText": [
+                    "first solar, inc.",
+                    "$first solar, inc.",
+                    "$fslr"
+                ],
+                "TickerText": "FSLR",
+                "TypeName": "stock",
+                "Url": "/markets/fslr/"
+            },
+            {
+                "InstrumentID": 1119,
+                "IsTradable": true,
+                "MarketName": "Western Union Company",
+                "Name": "WU",
+                "TagsText": [
+                    "western union company",
+                    "$western union company",
+                    "$wu"
+                ],
+                "TickerText": "WU",
+                "TypeName": "stock",
+                "Url": "/markets/wu/"
+            },
+            {
+                "InstrumentID": 1120,
+                "IsTradable": true,
+                "MarketName": "Gap, Inc.",
+                "Name": "GPS",
+                "TagsText": [
+                    "gap, inc.",
+                    "$gap, inc.",
+                    "$gps"
+                ],
+                "TickerText": "GPS",
+                "TypeName": "stock",
+                "Url": "/markets/gps/"
+            },
+            {
+                "InstrumentID": 1121,
+                "IsTradable": true,
+                "MarketName": "Ralph Lauren Corp",
+                "Name": "RL",
+                "TagsText": [
+                    "ralph lauren corp",
+                    "$ralph lauren corp",
+                    "$rl"
+                ],
+                "TickerText": "RL",
+                "TypeName": "stock",
+                "Url": "/markets/rl/"
+            },
+            {
+                "InstrumentID": 1122,
+                "IsTradable": true,
+                "MarketName": "Harley-Davidson Inc",
+                "Name": "HOG",
+                "TagsText": [
+                    "harley-davidson inc",
+                    "$harley-davidson inc",
+                    "$hog"
+                ],
+                "TickerText": "HOG",
+                "TypeName": "stock",
+                "Url": "/markets/hog/"
+            },
+            {
+                "InstrumentID": 1123,
+                "IsTradable": true,
+                "MarketName": "TripAdvisor Inc",
+                "Name": "TRIP",
+                "TagsText": [
+                    "tripadvisor inc",
+                    "$tripadvisor inc",
+                    "$trip"
+                ],
+                "TickerText": "TRIP",
+                "TypeName": "stock",
+                "Url": "/markets/trip/"
+            },
+            {
+                "InstrumentID": 1124,
+                "IsTradable": true,
+                "MarketName": "Electronic Arts, Inc.",
+                "Name": "EA",
+                "TagsText": [
+                    "electronic arts, inc.",
+                    "$electronic arts, inc.",
+                    "$ea"
+                ],
+                "TickerText": "EA",
+                "TypeName": "stock",
+                "Url": "/markets/ea/"
+            },
+            {
+                "InstrumentID": 1125,
+                "IsTradable": true,
+                "MarketName": "Urban Outfitters Inc.",
+                "Name": "URBN",
+                "TagsText": [
+                    "urban outfitters inc.",
+                    "$urban outfitters inc.",
+                    "$urbn"
+                ],
+                "TickerText": "URBN",
+                "TypeName": "stock",
+                "Url": "/markets/urbn/"
+            },
+            {
+                "InstrumentID": 1126,
+                "IsTradable": true,
+                "MarketName": "Adobe Systems Inc",
+                "Name": "ADBE",
+                "TagsText": [
+                    "adobe systems inc",
+                    "$adobe systems inc",
+                    "$adbe"
+                ],
+                "TickerText": "ADBE",
+                "TypeName": "stock",
+                "Url": "/markets/adbe/"
+            },
+            {
+                "InstrumentID": 1127,
+                "IsTradable": true,
+                "MarketName": "Netflix, Inc.",
+                "Name": "NFLX",
+                "TagsText": [
+                    "netflix, inc.",
+                    "$netflix, inc.",
+                    "$nflx"
+                ],
+                "TickerText": "NFLX",
+                "TypeName": "stock",
+                "Url": "/markets/nflx/"
+            },
+            {
+                "InstrumentID": 1128,
+                "IsTradable": true,
+                "MarketName": "Motorola Solutions, Inc.",
+                "Name": "MSI",
+                "TagsText": [
+                    "motorola solutions, inc.",
+                    "$motorola solutions, inc.",
+                    "$msi"
+                ],
+                "TickerText": "MSI",
+                "TypeName": "stock",
+                "Url": "/markets/msi/"
+            },
+            {
+                "InstrumentID": 1129,
+                "IsTradable": true,
+                "MarketName": "Western Digital Corporation",
+                "Name": "WDC",
+                "TagsText": [
+                    "western digital corporation",
+                    "$western digital corporation",
+                    "$wdc"
+                ],
+                "TickerText": "WDC",
+                "TypeName": "stock",
+                "Url": "/markets/wdc/"
+            },
+            {
+                "InstrumentID": 1130,
+                "IsTradable": true,
+                "MarketName": "Micron Technology, Inc.",
+                "Name": "MU",
+                "TagsText": [
+                    "micron technology, inc.",
+                    "$micron technology, inc.",
+                    "$mu"
+                ],
+                "TickerText": "MU",
+                "TypeName": "stock",
+                "Url": "/markets/mu/"
+            },
+            {
+                "InstrumentID": 1131,
+                "IsTradable": true,
+                "MarketName": "Abercrombie & Fitch Company",
+                "Name": "ANF",
+                "TagsText": [
+                    "abercrombie & fitch company",
+                    "$abercrombie & fitch company",
+                    "$anf"
+                ],
+                "TickerText": "ANF",
+                "TypeName": "stock",
+                "Url": "/markets/anf/"
+            },
+            {
+                "InstrumentID": 1133,
+                "IsTradable": true,
+                "MarketName": "American Capital Agency Corp.",
+                "Name": "AGNC",
+                "TagsText": [
+                    "american capital agency corp.",
+                    "$american capital agency corp.",
+                    "$agnc"
+                ],
+                "TickerText": "AGNC",
+                "TypeName": "stock",
+                "Url": "/markets/agnc/"
+            },
+            {
+                "InstrumentID": 1134,
+                "IsTradable": true,
+                "MarketName": "Autodesk, Inc.",
+                "Name": "ADSK",
+                "TagsText": [
+                    "autodesk, inc.",
+                    "$autodesk, inc.",
+                    "$adsk"
+                ],
+                "TickerText": "ADSK",
+                "TypeName": "stock",
+                "Url": "/markets/adsk/"
+            },
+            {
+                "InstrumentID": 1135,
+                "IsTradable": true,
+                "MarketName": "Oracle Corporation",
+                "Name": "ORCL",
+                "TagsText": [
+                    "oracle corporation",
+                    "$oracle corporation",
+                    "$orcl"
+                ],
+                "TickerText": "ORCL",
+                "TypeName": "stock",
+                "Url": "/markets/orcl/"
+            },
+            {
+                "InstrumentID": 1136,
+                "IsTradable": true,
+                "MarketName": "Lockheed Martin Corporation",
+                "Name": "LMT",
+                "TagsText": [
+                    "lockheed martin corporation",
+                    "$lockheed martin corporation",
+                    "$lmt"
+                ],
+                "TickerText": "LMT",
+                "TypeName": "stock",
+                "Url": "/markets/lmt/"
+            },
+            {
+                "InstrumentID": 1137,
+                "IsTradable": true,
+                "MarketName": "NVIDIA Corporation",
+                "Name": "NVDA",
+                "TagsText": [
+                    "nvidia corporation",
+                    "$nvidia corporation",
+                    "$nvda"
+                ],
+                "TickerText": "NVDA",
+                "TypeName": "stock",
+                "Url": "/markets/nvda/"
+            },
+            {
+                "InstrumentID": 1138,
+                "IsTradable": true,
+                "MarketName": "FedEx Corporation",
+                "Name": "FDX",
+                "TagsText": [
+                    "fedex corporation",
+                    "$fedex corporation",
+                    "$fdx"
+                ],
+                "TickerText": "FDX",
+                "TypeName": "stock",
+                "Url": "/markets/fdx/"
+            },
+            {
+                "InstrumentID": 1139,
+                "IsTradable": true,
+                "MarketName": "Noble Energy Inc",
+                "Name": "NBL",
+                "TagsText": [
+                    "noble energy inc",
+                    "$noble energy inc",
+                    "$nbl"
+                ],
+                "TickerText": "NBL",
+                "TypeName": "stock",
+                "Url": "/markets/nbl/"
+            },
+            {
+                "InstrumentID": 1140,
+                "IsTradable": true,
+                "MarketName": "Avis Budget Group Inc",
+                "Name": "CAR",
+                "TagsText": [
+                    "avis budget group inc",
+                    "$avis budget group inc",
+                    "$car"
+                ],
+                "TickerText": "CAR",
+                "TypeName": "stock",
+                "Url": "/markets/car/"
+            },
+            {
+                "InstrumentID": 1141,
+                "IsTradable": true,
+                "MarketName": "Baidu, Inc.",
+                "Name": "BIDU",
+                "TagsText": [
+                    "baidu, inc.",
+                    "$baidu, inc.",
+                    "$bidu"
+                ],
+                "TickerText": "BIDU",
+                "TypeName": "stock",
+                "Url": "/markets/bidu/"
+            },
+            {
+                "InstrumentID": 1142,
+                "IsTradable": true,
+                "MarketName": "Starbucks Corporation",
+                "Name": "SBUX",
+                "TagsText": [
+                    "starbucks corporation",
+                    "$starbucks corporation",
+                    "$sbux"
+                ],
+                "TickerText": "SBUX",
+                "TypeName": "stock",
+                "Url": "/markets/sbux/"
+            },
+            {
+                "InstrumentID": 1143,
+                "IsTradable": true,
+                "MarketName": "Amgen Inc",
+                "Name": "AMGN",
+                "TagsText": [
+                    "amgen inc",
+                    "$amgen inc",
+                    "$amgn"
+                ],
+                "TickerText": "AMGN",
+                "TypeName": "stock",
+                "Url": "/markets/amgn/"
+            },
+            {
+                "InstrumentID": 1144,
+                "IsTradable": true,
+                "MarketName": "Activision Blizzard, Inc.",
+                "Name": "ATVI",
+                "TagsText": [
+                    "activision blizzard, inc.",
+                    "$activision blizzard, inc.",
+                    "$atvi"
+                ],
+                "TickerText": "ATVI",
+                "TypeName": "stock",
+                "Url": "/markets/atvi/"
+            },
+            {
+                "InstrumentID": 1145,
+                "IsTradable": true,
+                "MarketName": "Check Point Software Technologies",
+                "Name": "CHKP",
+                "TagsText": [
+                    "check point software technologies",
+                    "$check point software technologies",
+                    "$chkp"
+                ],
+                "TickerText": "CHKP",
+                "TypeName": "stock",
+                "Url": "/markets/chkp/"
+            },
+            {
+                "InstrumentID": 1146,
+                "IsTradable": true,
+                "MarketName": "Mosaic Co",
+                "Name": "MOS",
+                "TagsText": [
+                    "mosaic co",
+                    "$mosaic co",
+                    "$mos"
+                ],
+                "TickerText": "MOS",
+                "TypeName": "stock",
+                "Url": "/markets/mos/"
+            },
+            {
+                "InstrumentID": 1147,
+                "IsTradable": true,
+                "MarketName": "PetSmart Inc.",
+                "Name": "PETM",
+                "TagsText": [
+                    "petsmart inc.",
+                    "$petsmart inc.",
+                    "$petm"
+                ],
+                "TickerText": "PETM",
+                "TypeName": "stock",
+                "Url": "/markets/petm/"
+            },
+            {
+                "InstrumentID": 1148,
+                "IsTradable": true,
+                "MarketName": "Dr Pepper Snapple Group, Inc.",
+                "Name": "DPS",
+                "TagsText": [
+                    "dr pepper snapple group, inc.",
+                    "$dr pepper snapple group, inc.",
+                    "$dps"
+                ],
+                "TickerText": "DPS",
+                "TypeName": "stock",
+                "Url": "/markets/dps/"
+            },
+            {
+                "InstrumentID": 1149,
+                "IsTradable": true,
+                "MarketName": "Constellation Brands Inc.",
+                "Name": "STZ",
+                "TagsText": [
+                    "constellation brands inc.",
+                    "$constellation brands inc.",
+                    "$stz"
+                ],
+                "TickerText": "STZ",
+                "TypeName": "stock",
+                "Url": "/markets/stz/"
+            },
+            {
+                "InstrumentID": 1153,
+                "IsTradable": true,
+                "MarketName": "Twitter",
+                "Name": "TWTR",
+                "TagsText": [
+                    "twitter",
+                    "$twitter",
+                    "$twtr"
+                ],
+                "TickerText": "TWTR",
+                "TypeName": "stock",
+                "Url": "/markets/twtr/"
+            },
+            {
+                "InstrumentID": 1154,
+                "IsTradable": true,
+                "MarketName": "King Digital Entertainment PLC",
+                "Name": "KING",
+                "TagsText": [
+                    "$king",
+                    "king digital entertainment plc",
+                    "$king digital entertainment plc"
+                ],
+                "TickerText": "KING",
+                "TypeName": "stock",
+                "Url": "/markets/king/"
+            },
+            {
+                "InstrumentID": 1200,
+                "IsTradable": true,
+                "MarketName": "Siemens Aktiengesellschaft",
+                "Name": "SIE.DE",
+                "TagsText": [
+                    "sie.de",
+                    "$sie.de",
+                    "siemens aktiengesellschaft",
+                    "$siemens aktiengesellschaft"
+                ],
+                "TickerText": "SIE.DE",
+                "TypeName": "stock",
+                "Url": "/markets/sie.de/"
+            },
+            {
+                "InstrumentID": 1201,
+                "IsTradable": true,
+                "MarketName": "BASF SE",
+                "Name": "BAS.DE",
+                "TagsText": [
+                    "bas.de",
+                    "$bas.de",
+                    "basf se",
+                    "$basf se"
+                ],
+                "TickerText": "BAS.DE",
+                "TypeName": "stock",
+                "Url": "/markets/bas.de/"
+            },
+            {
+                "InstrumentID": 1202,
+                "IsTradable": true,
+                "MarketName": "SAP AG",
+                "Name": "SAP.DE",
+                "TagsText": [
+                    "sap.de",
+                    "$sap.de",
+                    "sap ag",
+                    "$sap ag"
+                ],
+                "TickerText": "SAP.DE",
+                "TypeName": "stock",
+                "Url": "/markets/sap.de/"
+            },
+            {
+                "InstrumentID": 1203,
+                "IsTradable": true,
+                "MarketName": "Bayer AG",
+                "Name": "BAYN.DE",
+                "TagsText": [
+                    "bayn.de",
+                    "$bayn.de",
+                    "bayer ag",
+                    "$bayer ag"
+                ],
+                "TickerText": "BAYN.DE",
+                "TypeName": "stock",
+                "Url": "/markets/bayn.de/"
+            },
+            {
+                "InstrumentID": 1204,
+                "IsTradable": true,
+                "MarketName": "Allianz SE",
+                "Name": "ALV.DE",
+                "TagsText": [
+                    "alv.de",
+                    "$alv.de",
+                    "allianz se",
+                    "$allianz se"
+                ],
+                "TickerText": "ALV.DE",
+                "TypeName": "stock",
+                "Url": "/markets/alv.de/"
+            },
+            {
+                "InstrumentID": 1205,
+                "IsTradable": true,
+                "MarketName": "E.ON SE",
+                "Name": "EOAN.DE",
+                "TagsText": [
+                    "eoan.de",
+                    "$eoan.de",
+                    "e.on se",
+                    "$e.on se"
+                ],
+                "TickerText": "EOAN.DE",
+                "TypeName": "stock",
+                "Url": "/markets/eoan.de/"
+            },
+            {
+                "InstrumentID": 1206,
+                "IsTradable": true,
+                "MarketName": "Daimler AG",
+                "Name": "DAI.DE",
+                "TagsText": [
+                    "dai.de",
+                    "$dai.de",
+                    "daimler ag",
+                    "$daimler ag"
+                ],
+                "TickerText": "DAI.DE",
+                "TypeName": "stock",
+                "Url": "/markets/dai.de/"
+            },
+            {
+                "InstrumentID": 1207,
+                "IsTradable": true,
+                "MarketName": "Deutsche Telekom AG",
+                "Name": "DTE.DE",
+                "TagsText": [
+                    "dte.de",
+                    "$dte.de",
+                    "deutsche telekom ag",
+                    "$deutsche telekom ag"
+                ],
+                "TickerText": "DTE.DE",
+                "TypeName": "stock",
+                "Url": "/markets/dte.de/"
+            },
+            {
+                "InstrumentID": 1209,
+                "IsTradable": true,
+                "MarketName": "Linde Aktiengesellschaft",
+                "Name": "LIN.DE",
+                "TagsText": [
+                    "lin.de",
+                    "$lin.de",
+                    "linde aktiengesellschaft",
+                    "$linde aktiengesellschaft"
+                ],
+                "TickerText": "LIN.DE",
+                "TypeName": "stock",
+                "Url": "/markets/lin.de/"
+            },
+            {
+                "InstrumentID": 1210,
+                "IsTradable": true,
+                "MarketName": "Volkswagen AG",
+                "Name": "VOW3.DE",
+                "TagsText": [
+                    "vow3.de",
+                    "$vow3.de",
+                    "volkswagen ag",
+                    "$volkswagen ag"
+                ],
+                "TickerText": "VOW3.DE",
+                "TypeName": "stock",
+                "Url": "/markets/vow3.de/"
+            },
+            {
+                "InstrumentID": 1211,
+                "IsTradable": true,
+                "MarketName": "Bayerische Motoren Werke Aktiengesellschaft",
+                "Name": "BMW.DE",
+                "TagsText": [
+                    "bmw.de",
+                    "$bmw.de",
+                    "bayerische motoren werke aktiengesellschaft",
+                    "$bayerische motoren werke aktiengesellschaft"
+                ],
+                "TickerText": "BMW.DE",
+                "TypeName": "stock",
+                "Url": "/markets/bmw.de/"
+            },
+            {
+                "InstrumentID": 1212,
+                "IsTradable": true,
+                "MarketName": "M",
+                "Name": "MUV2.DE",
+                "TagsText": [
+                    "muv2.de",
+                    "$muv2.de",
+                    "m",
+                    "$m"
+                ],
+                "TickerText": "MUV2.DE",
+                "TypeName": "stock",
+                "Url": "/markets/muv2.de/"
+            },
+            {
+                "InstrumentID": 1213,
+                "IsTradable": true,
+                "MarketName": "RWE AG",
+                "Name": "RWE.DE",
+                "TagsText": [
+                    "rwe.de",
+                    "$rwe.de",
+                    "rwe ag",
+                    "$rwe ag"
+                ],
+                "TickerText": "RWE.DE",
+                "TypeName": "stock",
+                "Url": "/markets/rwe.de/"
+            },
+            {
+                "InstrumentID": 1214,
+                "IsTradable": true,
+                "MarketName": "Fresenius Medical Care AG & Co. KGAA",
+                "Name": "FME.DE",
+                "TagsText": [
+                    "fme.de",
+                    "$fme.de",
+                    "fresenius medical care ag & co. kgaa",
+                    "$fresenius medical care ag & co. kgaa"
+                ],
+                "TickerText": "FME.DE",
+                "TypeName": "stock",
+                "Url": "/markets/fme.de/"
+            },
+            {
+                "InstrumentID": 1215,
+                "IsTradable": true,
+                "MarketName": "Adidas AG",
+                "Name": "ADS.DE",
+                "TagsText": [
+                    "ads.de",
+                    "$ads.de",
+                    "adidas ag",
+                    "$adidas ag"
+                ],
+                "TickerText": "ADS.DE",
+                "TypeName": "stock",
+                "Url": "/markets/ads.de/"
+            },
+            {
+                "InstrumentID": 1216,
+                "IsTradable": true,
+                "MarketName": "Deutsche Post AG",
+                "Name": "DPW.DE",
+                "TagsText": [
+                    "depw.de",
+                    "$depw.de",
+                    "deutsche post ag",
+                    "$deutsche post ag",
+                    "$dpw.de"
+                ],
+                "TickerText": "DPW.DE",
+                "TypeName": "stock",
+                "Url": "/markets/dpw.de/"
+            },
+            {
+                "InstrumentID": 1217,
+                "IsTradable": true,
+                "MarketName": "Fresenius SE & Co KGaA",
+                "Name": "FRE.DE",
+                "TagsText": [
+                    "fre.de",
+                    "$fre.de",
+                    "fresenius se & co kgaa",
+                    "$fresenius se & co kgaa"
+                ],
+                "TickerText": "FRE.DE",
+                "TypeName": "stock",
+                "Url": "/markets/fre.de/"
+            },
+            {
+                "InstrumentID": 1218,
+                "IsTradable": true,
+                "MarketName": "Henkel AG & Co. KGaA",
+                "Name": "HEN3.DE",
+                "TagsText": [
+                    "hen3.de",
+                    "$hen3.de",
+                    "henkel ag & co. kgaa",
+                    "$henkel ag & co. kgaa"
+                ],
+                "TickerText": "HEN3.DE",
+                "TypeName": "stock",
+                "Url": "/markets/hen3.de/"
+            },
+            {
+                "InstrumentID": 1219,
+                "IsTradable": true,
+                "MarketName": "Deutsche Boerse AG",
+                "Name": "DB1.DE",
+                "TagsText": [
+                    "deb1.de",
+                    "$deb1.de",
+                    "deutsche boerse ag",
+                    "$deutsche boerse ag",
+                    "$db1.de"
+                ],
+                "TickerText": "DB1.DE",
+                "TypeName": "stock",
+                "Url": "/markets/db1.de/"
+            },
+            {
+                "InstrumentID": 1220,
+                "IsTradable": true,
+                "MarketName": "ThyssenKrupp AG",
+                "Name": "TKA.DE",
+                "TagsText": [
+                    "tka.de",
+                    "$tka.de",
+                    "thyssenkrupp ag",
+                    "$thyssenkrupp ag"
+                ],
+                "TickerText": "TKA.DE",
+                "TypeName": "stock",
+                "Url": "/markets/tka.de/"
+            },
+            {
+                "InstrumentID": 1221,
+                "IsTradable": true,
+                "MarketName": "Infineon Technologies AG",
+                "Name": "IFX.DE",
+                "TagsText": [
+                    "ifx.de",
+                    "$ifx.de",
+                    "infineon technologies ag",
+                    "$infineon technologies ag"
+                ],
+                "TickerText": "IFX.DE",
+                "TypeName": "stock",
+                "Url": "/markets/ifx.de/"
+            },
+            {
+                "InstrumentID": 1222,
+                "IsTradable": true,
+                "MarketName": "K+S Aktiengesellschaft",
+                "Name": "SDF.DE",
+                "TagsText": [
+                    "sdf.de",
+                    "$sdf.de",
+                    "k+s aktiengesellschaft",
+                    "$k+s aktiengesellschaft"
+                ],
+                "TickerText": "SDF.DE",
+                "TypeName": "stock",
+                "Url": "/markets/sdf.de/"
+            },
+            {
+                "InstrumentID": 1225,
+                "IsTradable": true,
+                "MarketName": "Beiersdorf AG",
+                "Name": "BEI.DE",
+                "TagsText": [
+                    "bei.de",
+                    "$bei.de",
+                    "beiersdorf ag",
+                    "$beiersdorf ag"
+                ],
+                "TickerText": "BEI.DE",
+                "TypeName": "stock",
+                "Url": "/markets/bei.de/"
+            },
+            {
+                "InstrumentID": 1226,
+                "IsTradable": true,
+                "MarketName": "HeidelbergCement AG",
+                "Name": "HEI.DE",
+                "TagsText": [
+                    "hei.de",
+                    "$hei.de",
+                    "heidelbergcement ag",
+                    "$heidelbergcement ag"
+                ],
+                "TickerText": "HEI.DE",
+                "TypeName": "stock",
+                "Url": "/markets/hei.de/"
+            },
+            {
+                "InstrumentID": 1227,
+                "IsTradable": true,
+                "MarketName": "Deutsche Lufthansa Aktiengesellschaft",
+                "Name": "LHA.DE",
+                "TagsText": [
+                    "lha.de",
+                    "$lha.de",
+                    "deutsche lufthansa aktiengesellschaft",
+                    "$deutsche lufthansa aktiengesellschaft"
+                ],
+                "TickerText": "LHA.DE",
+                "TypeName": "stock",
+                "Url": "/markets/lha.de/"
+            },
+            {
+                "InstrumentID": 1228,
+                "IsTradable": true,
+                "MarketName": "Continental AG",
+                "Name": "CON.DE",
+                "TagsText": [
+                    "con.de",
+                    "$con.de",
+                    "continental ag",
+                    "$continental ag"
+                ],
+                "TickerText": "CON.DE",
+                "TypeName": "stock",
+                "Url": "/markets/con.de/"
+            },
+            {
+                "InstrumentID": 2000,
+                "IsTradable": true,
+                "MarketName": "Anglo American",
+                "Name": "AAL.L",
+                "TagsText": [
+                    "aal.l",
+                    "$aal.l",
+                    "anglo american",
+                    "$anglo american"
+                ],
+                "TickerText": "AAL.L",
+                "TypeName": "stock",
+                "Url": "/markets/aal.l/"
+            },
+            {
+                "InstrumentID": 2001,
+                "IsTradable": true,
+                "MarketName": "Associated British Foods",
+                "Name": "ABF.L",
+                "TagsText": [
+                    "abf.l",
+                    "$abf.l",
+                    "associated british foods",
+                    "$associated british foods"
+                ],
+                "TickerText": "ABF.L",
+                "TypeName": "stock",
+                "Url": "/markets/abf.l/"
+            },
+            {
+                "InstrumentID": 2002,
+                "IsTradable": true,
+                "MarketName": "Admiral Group",
+                "Name": "ADM.L",
+                "TagsText": [
+                    "adm.l",
+                    "$adm.l",
+                    "admiral group",
+                    "$admiral group"
+                ],
+                "TickerText": "ADM.L",
+                "TypeName": "stock",
+                "Url": "/markets/adm.l/"
+            },
+            {
+                "InstrumentID": 2003,
+                "IsTradable": true,
+                "MarketName": "Aberdeen Asset Management",
+                "Name": "ADN.L",
+                "TagsText": [
+                    "adn.l",
+                    "$adn.l",
+                    "aberdeen asset management",
+                    "$aberdeen asset management"
+                ],
+                "TickerText": "ADN.L",
+                "TypeName": "stock",
+                "Url": "/markets/adn.l/"
+            },
+            {
+                "InstrumentID": 2004,
+                "IsTradable": true,
+                "MarketName": "Aggreko",
+                "Name": "AGK.L",
+                "TagsText": [
+                    "agk.l",
+                    "$agk.l",
+                    "aggreko",
+                    "$aggreko"
+                ],
+                "TickerText": "AGK.L",
+                "TypeName": "stock",
+                "Url": "/markets/agk.l/"
+            },
+            {
+                "InstrumentID": 2005,
+                "IsTradable": true,
+                "MarketName": "Ashtead Group",
+                "Name": "AHT.L",
+                "TagsText": [
+                    "aht.l",
+                    "$aht.l",
+                    "ashtead group",
+                    "$ashtead group"
+                ],
+                "TickerText": "AHT.L",
+                "TypeName": "stock",
+                "Url": "/markets/aht.l/"
+            },
+            {
+                "InstrumentID": 2006,
+                "IsTradable": true,
+                "MarketName": "AMEC",
+                "Name": "AMEC.L",
+                "TagsText": [
+                    "amec.l",
+                    "$amec.l",
+                    "amec",
+                    "$amec"
+                ],
+                "TickerText": "AMEC.L",
+                "TypeName": "stock",
+                "Url": "/markets/amec.l/"
+            },
+            {
+                "InstrumentID": 2007,
+                "IsTradable": true,
+                "MarketName": "Antofagasta",
+                "Name": "ANTO.L",
+                "TagsText": [
+                    "anto.l",
+                    "$anto.l",
+                    "antofagasta",
+                    "$antofagasta"
+                ],
+                "TickerText": "ANTO.L",
+                "TypeName": "stock",
+                "Url": "/markets/anto.l/"
+            },
+            {
+                "InstrumentID": 2008,
+                "IsTradable": true,
+                "MarketName": "ARM Holdings",
+                "Name": "ARM.L",
+                "TagsText": [
+                    "arm.l",
+                    "$arm.l",
+                    "arm holdings",
+                    "$arm holdings"
+                ],
+                "TickerText": "ARM.L",
+                "TypeName": "stock",
+                "Url": "/markets/arm.l/"
+            },
+            {
+                "InstrumentID": 2009,
+                "IsTradable": true,
+                "MarketName": "Aviva",
+                "Name": "AV.L",
+                "TagsText": [
+                    "av.l",
+                    "$av.l",
+                    "aviva",
+                    "$aviva"
+                ],
+                "TickerText": "AV.L",
+                "TypeName": "stock",
+                "Url": "/markets/av.l/"
+            },
+            {
+                "InstrumentID": 2010,
+                "IsTradable": true,
+                "MarketName": "AstraZeneca",
+                "Name": "AZN.L",
+                "TagsText": [
+                    "azn.l",
+                    "$azn.l",
+                    "astrazeneca",
+                    "$astrazeneca"
+                ],
+                "TickerText": "AZN.L",
+                "TypeName": "stock",
+                "Url": "/markets/azn.l/"
+            },
+            {
+                "InstrumentID": 2012,
+                "IsTradable": true,
+                "MarketName": "Babcock International",
+                "Name": "BAB.L",
+                "TagsText": [
+                    "bab.l",
+                    "$bab.l",
+                    "babcock international",
+                    "$babcock international"
+                ],
+                "TickerText": "BAB.L",
+                "TypeName": "stock",
+                "Url": "/markets/bab.l/"
+            },
+            {
+                "InstrumentID": 2013,
+                "IsTradable": true,
+                "MarketName": "Barclays",
+                "Name": "BARC.L",
+                "TagsText": [
+                    "barc.l",
+                    "$barc.l",
+                    "barclays",
+                    "$barclays"
+                ],
+                "TickerText": "BARC.L",
+                "TypeName": "stock",
+                "Url": "/markets/barc.l/"
+            },
+            {
+                "InstrumentID": 2014,
+                "IsTradable": true,
+                "MarketName": "British American Tobacco",
+                "Name": "BATS.L",
+                "TagsText": [
+                    "bats.l",
+                    "$bats.l",
+                    "british american tobacco",
+                    "$british american tobacco"
+                ],
+                "TickerText": "BATS.L",
+                "TypeName": "stock",
+                "Url": "/markets/bats.l/"
+            },
+            {
+                "InstrumentID": 2015,
+                "IsTradable": true,
+                "MarketName": "BG Group",
+                "Name": "BG.L",
+                "TagsText": [
+                    "bg.l",
+                    "$bg.l",
+                    "bg group",
+                    "$bg group"
+                ],
+                "TickerText": "BG.L",
+                "TypeName": "stock",
+                "Url": "/markets/bg.l/"
+            },
+            {
+                "InstrumentID": 2016,
+                "IsTradable": true,
+                "MarketName": "British Land",
+                "Name": "BLND.L",
+                "TagsText": [
+                    "blnd.l",
+                    "$blnd.l",
+                    "british land",
+                    "$british land"
+                ],
+                "TickerText": "BLND.L",
+                "TypeName": "stock",
+                "Url": "/markets/blnd.l/"
+            },
+            {
+                "InstrumentID": 2017,
+                "IsTradable": true,
+                "MarketName": "BHP Billiton",
+                "Name": "BLT.L",
+                "TagsText": [
+                    "blt.l",
+                    "$blt.l",
+                    "bhp billiton",
+                    "$bhp billiton"
+                ],
+                "TickerText": "BLT.L",
+                "TypeName": "stock",
+                "Url": "/markets/blt.l/"
+            },
+            {
+                "InstrumentID": 2018,
+                "IsTradable": true,
+                "MarketName": "Bunzl",
+                "Name": "BNZL.L",
+                "TagsText": [
+                    "bnzl.l",
+                    "$bnzl.l",
+                    "bunzl",
+                    "$bunzl"
+                ],
+                "TickerText": "BNZL.L",
+                "TypeName": "stock",
+                "Url": "/markets/bnzl.l/"
+            },
+            {
+                "InstrumentID": 2019,
+                "IsTradable": true,
+                "MarketName": "BP",
+                "Name": "BP.L",
+                "TagsText": [
+                    "bp.l",
+                    "$bp.l",
+                    "bp",
+                    "$bp"
+                ],
+                "TickerText": "BP.L",
+                "TypeName": "stock",
+                "Url": "/markets/bp.l/"
+            },
+            {
+                "InstrumentID": 2020,
+                "IsTradable": true,
+                "MarketName": "Burberry Group",
+                "Name": "BRBY.L",
+                "TagsText": [
+                    "brby.l",
+                    "$brby.l",
+                    "burberry group",
+                    "$burberry group"
+                ],
+                "TickerText": "BRBY.L",
+                "TypeName": "stock",
+                "Url": "/markets/brby.l/"
+            },
+            {
+                "InstrumentID": 2021,
+                "IsTradable": true,
+                "MarketName": "British Sky Broadcasting",
+                "Name": "BSY.L",
+                "TagsText": [
+                    "bsy.l",
+                    "$bsy.l",
+                    "british sky broadcasting",
+                    "$british sky broadcasting"
+                ],
+                "TickerText": "BSY.L",
+                "TypeName": "stock",
+                "Url": "/markets/bsy.l/"
+            },
+            {
+                "InstrumentID": 2022,
+                "IsTradable": true,
+                "MarketName": "BT Group",
+                "Name": "BT.L",
+                "TagsText": [
+                    "bt.l",
+                    "$bt.l",
+                    "bt group",
+                    "$bt group"
+                ],
+                "TickerText": "BT.L",
+                "TypeName": "stock",
+                "Url": "/markets/bt.l/"
+            },
+            {
+                "InstrumentID": 2023,
+                "IsTradable": true,
+                "MarketName": "Coca Cola Hellenic",
+                "Name": "CCH.L",
+                "TagsText": [
+                    "cch.l",
+                    "$cch.l",
+                    "coca cola hellenic",
+                    "$coca cola hellenic"
+                ],
+                "TickerText": "CCH.L",
+                "TypeName": "stock",
+                "Url": "/markets/cch.l/"
+            },
+            {
+                "InstrumentID": 2024,
+                "IsTradable": true,
+                "MarketName": "Carnival",
+                "Name": "CCL.L",
+                "TagsText": [
+                    "ccl.l",
+                    "$ccl.l",
+                    "carnival",
+                    "$carnival"
+                ],
+                "TickerText": "CCL.L",
+                "TypeName": "stock",
+                "Url": "/markets/ccl.l/"
+            },
+            {
+                "InstrumentID": 2025,
+                "IsTradable": true,
+                "MarketName": "Centrica",
+                "Name": "CNA.L",
+                "TagsText": [
+                    "cna.l",
+                    "$cna.l",
+                    "centrica",
+                    "$centrica"
+                ],
+                "TickerText": "CNA.L",
+                "TypeName": "stock",
+                "Url": "/markets/cna.l/"
+            },
+            {
+                "InstrumentID": 2026,
+                "IsTradable": true,
+                "MarketName": "Compass Group",
+                "Name": "CPG.L",
+                "TagsText": [
+                    "cpg.l",
+                    "$cpg.l",
+                    "compass group",
+                    "$compass group"
+                ],
+                "TickerText": "CPG.L",
+                "TypeName": "stock",
+                "Url": "/markets/cpg.l/"
+            },
+            {
+                "InstrumentID": 2027,
+                "IsTradable": true,
+                "MarketName": "Capita",
+                "Name": "CPI.L",
+                "TagsText": [
+                    "cpi.l",
+                    "$cpi.l",
+                    "capita",
+                    "$capita"
+                ],
+                "TickerText": "CPI.L",
+                "TypeName": "stock",
+                "Url": "/markets/cpi.l/"
+            },
+            {
+                "InstrumentID": 2029,
+                "IsTradable": true,
+                "MarketName": "Diageo",
+                "Name": "DGE.L",
+                "TagsText": [
+                    "dge.l",
+                    "$dge.l",
+                    "diageo",
+                    "$diageo"
+                ],
+                "TickerText": "DGE.L",
+                "TypeName": "stock",
+                "Url": "/markets/dge.l/"
+            },
+            {
+                "InstrumentID": 2030,
+                "IsTradable": true,
+                "MarketName": "Experian",
+                "Name": "EXPN.L",
+                "TagsText": [
+                    "expn.l",
+                    "$expn.l",
+                    "experian",
+                    "$experian"
+                ],
+                "TickerText": "EXPN.L",
+                "TypeName": "stock",
+                "Url": "/markets/expn.l/"
+            },
+            {
+                "InstrumentID": 2031,
+                "IsTradable": true,
+                "MarketName": "easyJet",
+                "Name": "EZJ.L",
+                "TagsText": [
+                    "ezj.l",
+                    "$ezj.l",
+                    "easyjet",
+                    "$easyjet"
+                ],
+                "TickerText": "EZJ.L",
+                "TypeName": "stock",
+                "Url": "/markets/ezj.l/"
+            },
+            {
+                "InstrumentID": 2032,
+                "IsTradable": true,
+                "MarketName": "Fresnillo",
+                "Name": "FRES.L",
+                "TagsText": [
+                    "fres.l",
+                    "$fres.l",
+                    "fresnillo",
+                    "$fresnillo"
+                ],
+                "TickerText": "FRES.L",
+                "TypeName": "stock",
+                "Url": "/markets/fres.l/"
+            },
+            {
+                "InstrumentID": 2033,
+                "IsTradable": true,
+                "MarketName": "G4S",
+                "Name": "GFS.L",
+                "TagsText": [
+                    "gfs.l",
+                    "$gfs.l",
+                    "g4s",
+                    "$g4s"
+                ],
+                "TickerText": "GFS.L",
+                "TypeName": "stock",
+                "Url": "/markets/gfs.l/"
+            },
+            {
+                "InstrumentID": 2034,
+                "IsTradable": true,
+                "MarketName": "GKN",
+                "Name": "GKN.L",
+                "TagsText": [
+                    "gkn.l",
+                    "$gkn.l",
+                    "gkn",
+                    "$gkn"
+                ],
+                "TickerText": "GKN.L",
+                "TypeName": "stock",
+                "Url": "/markets/gkn.l/"
+            },
+            {
+                "InstrumentID": 2035,
+                "IsTradable": true,
+                "MarketName": "Glencore Xstrata",
+                "Name": "GLEN.L",
+                "TagsText": [
+                    "glen.l",
+                    "$glen.l",
+                    "glencore xstrata",
+                    "$glencore xstrata"
+                ],
+                "TickerText": "GLEN.L",
+                "TypeName": "stock",
+                "Url": "/markets/glen.l/"
+            },
+            {
+                "InstrumentID": 2036,
+                "IsTradable": true,
+                "MarketName": "GlaxoSmithKline",
+                "Name": "GSK.L",
+                "TagsText": [
+                    "gsk.l",
+                    "$gsk.l",
+                    "glaxosmithkline",
+                    "$glaxosmithkline"
+                ],
+                "TickerText": "GSK.L",
+                "TypeName": "stock",
+                "Url": "/markets/gsk.l/"
+            },
+            {
+                "InstrumentID": 2037,
+                "IsTradable": true,
+                "MarketName": "Hargreaves Lansdown",
+                "Name": "HL.L",
+                "TagsText": [
+                    "hl.l",
+                    "$hl.l",
+                    "hargreaves lansdown",
+                    "$hargreaves lansdown"
+                ],
+                "TickerText": "HL.L",
+                "TypeName": "stock",
+                "Url": "/markets/hl.l/"
+            },
+            {
+                "InstrumentID": 2038,
+                "IsTradable": true,
+                "MarketName": "Hammerson",
+                "Name": "HMSO.L",
+                "TagsText": [
+                    "hmso.l",
+                    "$hmso.l",
+                    "hammerson",
+                    "$hammerson"
+                ],
+                "TickerText": "HMSO.L",
+                "TypeName": "stock",
+                "Url": "/markets/hmso.l/"
+            },
+            {
+                "InstrumentID": 2040,
+                "IsTradable": true,
+                "MarketName": "International Consolidated Airlines",
+                "Name": "IAG.L",
+                "TagsText": [
+                    "iag.l",
+                    "$iag.l",
+                    "international consolidated airlines",
+                    "$international consolidated airlines"
+                ],
+                "TickerText": "IAG.L",
+                "TypeName": "stock",
+                "Url": "/markets/iag.l/"
+            },
+            {
+                "InstrumentID": 2042,
+                "IsTradable": true,
+                "MarketName": "IMI",
+                "Name": "IMI.L",
+                "TagsText": [
+                    "imi.l",
+                    "$imi.l",
+                    "imi",
+                    "$imi"
+                ],
+                "TickerText": "IMI.L",
+                "TypeName": "stock",
+                "Url": "/markets/imi.l/"
+            },
+            {
+                "InstrumentID": 2043,
+                "IsTradable": true,
+                "MarketName": "Imperial Tobacco Group",
+                "Name": "IMT.L",
+                "TagsText": [
+                    "imt.l",
+                    "$imt.l",
+                    "imperial tobacco group",
+                    "$imperial tobacco group"
+                ],
+                "TickerText": "IMT.L",
+                "TypeName": "stock",
+                "Url": "/markets/imt.l/"
+            },
+            {
+                "InstrumentID": 2044,
+                "IsTradable": true,
+                "MarketName": "Intertek Group",
+                "Name": "ITRK.L",
+                "TagsText": [
+                    "itrk.l",
+                    "$itrk.l",
+                    "intertek group",
+                    "$intertek group"
+                ],
+                "TickerText": "ITRK.L",
+                "TypeName": "stock",
+                "Url": "/markets/itrk.l/"
+            },
+            {
+                "InstrumentID": 2045,
+                "IsTradable": true,
+                "MarketName": "ITV",
+                "Name": "ITV.L",
+                "TagsText": [
+                    "itv.l",
+                    "$itv.l",
+                    "itv",
+                    "$itv"
+                ],
+                "TickerText": "ITV.L",
+                "TypeName": "stock",
+                "Url": "/markets/itv.l/"
+            },
+            {
+                "InstrumentID": 2046,
+                "IsTradable": true,
+                "MarketName": "Johnson Matthey",
+                "Name": "JMAT.L",
+                "TagsText": [
+                    "jmat.l",
+                    "$jmat.l",
+                    "johnson matthey",
+                    "$johnson matthey"
+                ],
+                "TickerText": "JMAT.L",
+                "TypeName": "stock",
+                "Url": "/markets/jmat.l/"
+            },
+            {
+                "InstrumentID": 2047,
+                "IsTradable": true,
+                "MarketName": "Kingfisher",
+                "Name": "KGF.L",
+                "TagsText": [
+                    "kgf.l",
+                    "$kgf.l",
+                    "kingfisher",
+                    "$kingfisher"
+                ],
+                "TickerText": "KGF.L",
+                "TypeName": "stock",
+                "Url": "/markets/kgf.l/"
+            },
+            {
+                "InstrumentID": 2048,
+                "IsTradable": true,
+                "MarketName": "Land Securities",
+                "Name": "LAND.L",
+                "TagsText": [
+                    "land.l",
+                    "$land.l",
+                    "land securities",
+                    "$land securities"
+                ],
+                "TickerText": "LAND.L",
+                "TypeName": "stock",
+                "Url": "/markets/land.l/"
+            },
+            {
+                "InstrumentID": 2049,
+                "IsTradable": true,
+                "MarketName": "Legal & General",
+                "Name": "LGEN.L",
+                "TagsText": [
+                    "lgen.l",
+                    "$lgen.l",
+                    "legal & general",
+                    "$legal & general"
+                ],
+                "TickerText": "LGEN.L",
+                "TypeName": "stock",
+                "Url": "/markets/lgen.l/"
+            },
+            {
+                "InstrumentID": 2050,
+                "IsTradable": true,
+                "MarketName": "Lloyd's",
+                "Name": "LLOY.L",
+                "TagsText": [
+                    "lloy.l",
+                    "$lloy.l",
+                    "lloyd's",
+                    "$lloyd's"
+                ],
+                "TickerText": "LLOY.L",
+                "TypeName": "stock",
+                "Url": "/markets/lloy.l/"
+            },
+            {
+                "InstrumentID": 2051,
+                "IsTradable": true,
+                "MarketName": "London Stock Exchange",
+                "Name": "LSE.L",
+                "TagsText": [
+                    "lse.l",
+                    "$lse.l",
+                    "london stock exchange",
+                    "$london stock exchange"
+                ],
+                "TickerText": "LSE.L",
+                "TypeName": "stock",
+                "Url": "/markets/lse.l/"
+            },
+            {
+                "InstrumentID": 2052,
+                "IsTradable": true,
+                "MarketName": "Meggitt",
+                "Name": "MGGT.L",
+                "TagsText": [
+                    "mggt.l",
+                    "$mggt.l",
+                    "meggitt",
+                    "$meggitt"
+                ],
+                "TickerText": "MGGT.L",
+                "TypeName": "stock",
+                "Url": "/markets/mggt.l/"
+            },
+            {
+                "InstrumentID": 2053,
+                "IsTradable": true,
+                "MarketName": "Marks & Spencer",
+                "Name": "MKS.L",
+                "TagsText": [
+                    "mks.l",
+                    "$mks.l",
+                    "marks & spencer",
+                    "$marks & spencer"
+                ],
+                "TickerText": "MKS.L",
+                "TypeName": "stock",
+                "Url": "/markets/mks.l/"
+            },
+            {
+                "InstrumentID": 2054,
+                "IsTradable": true,
+                "MarketName": "Mondi",
+                "Name": "MNDI.L",
+                "TagsText": [
+                    "mndi.l",
+                    "$mndi.l",
+                    "mondi",
+                    "$mondi"
+                ],
+                "TickerText": "MNDI.L",
+                "TypeName": "stock",
+                "Url": "/markets/mndi.l/"
+            },
+            {
+                "InstrumentID": 2055,
+                "IsTradable": true,
+                "MarketName": "Melrose Industries",
+                "Name": "MRO.L",
+                "TagsText": [
+                    "mro.l",
+                    "$mro.l",
+                    "melrose industries",
+                    "$melrose industries"
+                ],
+                "TickerText": "MRO.L",
+                "TypeName": "stock",
+                "Url": "/markets/mro.l/"
+            },
+            {
+                "InstrumentID": 2056,
+                "IsTradable": true,
+                "MarketName": "Morrisons",
+                "Name": "MRW.L",
+                "TagsText": [
+                    "mrw.l",
+                    "$mrw.l",
+                    "morrisons",
+                    "$morrisons"
+                ],
+                "TickerText": "MRW.L",
+                "TypeName": "stock",
+                "Url": "/markets/mrw.l/"
+            },
+            {
+                "InstrumentID": 2057,
+                "IsTradable": true,
+                "MarketName": "National Grid",
+                "Name": "NG.L",
+                "TagsText": [
+                    "ng.l",
+                    "$ng.l",
+                    "national grid",
+                    "$national grid"
+                ],
+                "TickerText": "NG.L",
+                "TypeName": "stock",
+                "Url": "/markets/ng.l/"
+            },
+            {
+                "InstrumentID": 2058,
+                "IsTradable": true,
+                "MarketName": "Next",
+                "Name": "NXT.L",
+                "TagsText": [
+                    "nxt.l",
+                    "$nxt.l",
+                    "$next"
+                ],
+                "TickerText": "NXT.L",
+                "TypeName": "stock",
+                "Url": "/markets/nxt.l/"
+            },
+            {
+                "InstrumentID": 2059,
+                "IsTradable": true,
+                "MarketName": "Old Mutual",
+                "Name": "OML.L",
+                "TagsText": [
+                    "oml.l",
+                    "$oml.l",
+                    "old mutual",
+                    "$old mutual"
+                ],
+                "TickerText": "OML.L",
+                "TypeName": "stock",
+                "Url": "/markets/oml.l/"
+            },
+            {
+                "InstrumentID": 2060,
+                "IsTradable": true,
+                "MarketName": "Petrofac",
+                "Name": "PFC.L",
+                "TagsText": [
+                    "pfc.l",
+                    "$pfc.l",
+                    "petrofac",
+                    "$petrofac"
+                ],
+                "TickerText": "PFC.L",
+                "TypeName": "stock",
+                "Url": "/markets/pfc.l/"
+            },
+            {
+                "InstrumentID": 2061,
+                "IsTradable": true,
+                "MarketName": "Prudential",
+                "Name": "PRU.L",
+                "TagsText": [
+                    "pru.l",
+                    "$pru.l",
+                    "prudential",
+                    "$prudential"
+                ],
+                "TickerText": "PRU.L",
+                "TypeName": "stock",
+                "Url": "/markets/pru.l/"
+            },
+            {
+                "InstrumentID": 2062,
+                "IsTradable": true,
+                "MarketName": "Persimmon",
+                "Name": "PSN.L",
+                "TagsText": [
+                    "psn.l",
+                    "$psn.l",
+                    "persimmon",
+                    "$persimmon"
+                ],
+                "TickerText": "PSN.L",
+                "TypeName": "stock",
+                "Url": "/markets/psn.l/"
+            },
+            {
+                "InstrumentID": 2063,
+                "IsTradable": true,
+                "MarketName": "Pearson",
+                "Name": "PSON.L",
+                "TagsText": [
+                    "pson.l",
+                    "$pson.l",
+                    "pearson",
+                    "$pearson"
+                ],
+                "TickerText": "PSON.L",
+                "TypeName": "stock",
+                "Url": "/markets/pson.l/"
+            },
+            {
+                "InstrumentID": 2064,
+                "IsTradable": true,
+                "MarketName": "Reckitt Benckiser",
+                "Name": "RB.L",
+                "TagsText": [
+                    "rb.l",
+                    "$rb.l",
+                    "reckitt benckiser",
+                    "$reckitt benckiser"
+                ],
+                "TickerText": "RB.L",
+                "TypeName": "stock",
+                "Url": "/markets/rb.l/"
+            },
+            {
+                "InstrumentID": 2065,
+                "IsTradable": true,
+                "MarketName": "Royal Bank of Scotland",
+                "Name": "RBS.L",
+                "TagsText": [
+                    "rbs.l",
+                    "$rbs.l",
+                    "royal bank of scotland",
+                    "$royal bank of scotland"
+                ],
+                "TickerText": "RBS.L",
+                "TypeName": "stock",
+                "Url": "/markets/rbs.l/"
+            },
+            {
+                "InstrumentID": 2068,
+                "IsTradable": true,
+                "MarketName": "Reed Elsevier",
+                "Name": "REL.L",
+                "TagsText": [
+                    "rel.l",
+                    "$rel.l",
+                    "reed elsevier",
+                    "$reed elsevier"
+                ],
+                "TickerText": "REL.L",
+                "TypeName": "stock",
+                "Url": "/markets/rel.l/"
+            },
+            {
+                "InstrumentID": 2069,
+                "IsTradable": true,
+                "MarketName": "REXAM",
+                "Name": "REX.L",
+                "TagsText": [
+                    "rex.l",
+                    "$rex.l",
+                    "rexam",
+                    "$rexam"
+                ],
+                "TickerText": "REX.L",
+                "TypeName": "stock",
+                "Url": "/markets/rex.l/"
+            },
+            {
+                "InstrumentID": 2070,
+                "IsTradable": true,
+                "MarketName": "Rio Tinto",
+                "Name": "RIO.L",
+                "TagsText": [
+                    "rio.l",
+                    "$rio.l",
+                    "rio tinto",
+                    "$rio tinto"
+                ],
+                "TickerText": "RIO.L",
+                "TypeName": "stock",
+                "Url": "/markets/rio.l/"
+            },
+            {
+                "InstrumentID": 2071,
+                "IsTradable": true,
+                "MarketName": "Royal Mail",
+                "Name": "RMG.L",
+                "TagsText": [
+                    "rmg.l",
+                    "$rmg.l",
+                    "royal mail",
+                    "$royal mail"
+                ],
+                "TickerText": "RMG.L",
+                "TypeName": "stock",
+                "Url": "/markets/rmg.l/"
+            },
+            {
+                "InstrumentID": 2072,
+                "IsTradable": true,
+                "MarketName": "Rolls-Royce",
+                "Name": "RR.L",
+                "TagsText": [
+                    "rr.l",
+                    "$rr.l",
+                    "rolls-royce",
+                    "$rolls-royce"
+                ],
+                "TickerText": "RR.L",
+                "TypeName": "stock",
+                "Url": "/markets/rr.l/"
+            },
+            {
+                "InstrumentID": 2073,
+                "IsTradable": true,
+                "MarketName": "Randgold Resources",
+                "Name": "RRS.L",
+                "TagsText": [
+                    "rrs.l",
+                    "$rrs.l",
+                    "randgold resources",
+                    "$randgold resources"
+                ],
+                "TickerText": "RRS.L",
+                "TypeName": "stock",
+                "Url": "/markets/rrs.l/"
+            },
+            {
+                "InstrumentID": 2074,
+                "IsTradable": true,
+                "MarketName": "RSA Insurance",
+                "Name": "RSA.L",
+                "TagsText": [
+                    "rsa.l",
+                    "$rsa.l",
+                    "rsa insurance",
+                    "$rsa insurance"
+                ],
+                "TickerText": "RSA.L",
+                "TypeName": "stock",
+                "Url": "/markets/rsa.l/"
+            },
+            {
+                "InstrumentID": 2075,
+                "IsTradable": true,
+                "MarketName": "Resolution",
+                "Name": "RSL.L",
+                "TagsText": [
+                    "rsl.l",
+                    "$rsl.l",
+                    "resolution",
+                    "$resolution"
+                ],
+                "TickerText": "RSL.L",
+                "TypeName": "stock",
+                "Url": "/markets/rsl.l/"
+            },
+            {
+                "InstrumentID": 2076,
+                "IsTradable": true,
+                "MarketName": "SABMiller",
+                "Name": "SAB.L",
+                "TagsText": [
+                    "sab.l",
+                    "$sab.l",
+                    "sabmiller",
+                    "$sabmiller"
+                ],
+                "TickerText": "SAB.L",
+                "TypeName": "stock",
+                "Url": "/markets/sab.l/"
+            },
+            {
+                "InstrumentID": 2077,
+                "IsTradable": true,
+                "MarketName": "Sainsbury (J)",
+                "Name": "SBRY.L",
+                "TagsText": [
+                    "sbry.l",
+                    "$sbry.l",
+                    "sainsbury (j)",
+                    "$sainsbury (j)"
+                ],
+                "TickerText": "SBRY.L",
+                "TypeName": "stock",
+                "Url": "/markets/sbry.l/"
+            },
+            {
+                "InstrumentID": 2078,
+                "IsTradable": true,
+                "MarketName": "Schroders",
+                "Name": "SDR.L",
+                "TagsText": [
+                    "sdr.l",
+                    "$sdr.l",
+                    "schroders",
+                    "$schroders"
+                ],
+                "TickerText": "SDR.L",
+                "TypeName": "stock",
+                "Url": "/markets/sdr.l/"
+            },
+            {
+                "InstrumentID": 2080,
+                "IsTradable": true,
+                "MarketName": "Shire",
+                "Name": "SHP.L",
+                "TagsText": [
+                    "shp.l",
+                    "$shp.l",
+                    "shire",
+                    "$shire"
+                ],
+                "TickerText": "SHP.L",
+                "TypeName": "stock",
+                "Url": "/markets/shp.l/"
+            },
+            {
+                "InstrumentID": 2081,
+                "IsTradable": true,
+                "MarketName": "Standard Life",
+                "Name": "SL.L",
+                "TagsText": [
+                    "sl.l",
+                    "$sl.l",
+                    "standard life",
+                    "$standard life"
+                ],
+                "TickerText": "SL.L",
+                "TypeName": "stock",
+                "Url": "/markets/sl.l/"
+            },
+            {
+                "InstrumentID": 2082,
+                "IsTradable": true,
+                "MarketName": "Smiths Group",
+                "Name": "SMIN.L",
+                "TagsText": [
+                    "smin.l",
+                    "$smin.l",
+                    "smiths group",
+                    "$smiths group"
+                ],
+                "TickerText": "SMIN.L",
+                "TypeName": "stock",
+                "Url": "/markets/smin.l/"
+            },
+            {
+                "InstrumentID": 2083,
+                "IsTradable": true,
+                "MarketName": "Smith & Nephew",
+                "Name": "SN.L",
+                "TagsText": [
+                    "sn.l",
+                    "$sn.l",
+                    "smith & nephew",
+                    "$smith & nephew"
+                ],
+                "TickerText": "SN.L",
+                "TypeName": "stock",
+                "Url": "/markets/sn.l/"
+            },
+            {
+                "InstrumentID": 2084,
+                "IsTradable": true,
+                "MarketName": "Sports Direct",
+                "Name": "SPD.L",
+                "TagsText": [
+                    "spd.l",
+                    "$spd.l",
+                    "sports direct",
+                    "$sports direct"
+                ],
+                "TickerText": "SPD.L",
+                "TypeName": "stock",
+                "Url": "/markets/spd.l/"
+            },
+            {
+                "InstrumentID": 2085,
+                "IsTradable": true,
+                "MarketName": "SSE",
+                "Name": "SSE.L",
+                "TagsText": [
+                    "sse.l",
+                    "$sse.l",
+                    "sse",
+                    "$sse"
+                ],
+                "TickerText": "SSE.L",
+                "TypeName": "stock",
+                "Url": "/markets/sse.l/"
+            },
+            {
+                "InstrumentID": 2086,
+                "IsTradable": true,
+                "MarketName": "Standard Chartered",
+                "Name": "STAN.L",
+                "TagsText": [
+                    "stan.l",
+                    "$stan.l",
+                    "standard chartered",
+                    "$standard chartered"
+                ],
+                "TickerText": "STAN.L",
+                "TypeName": "stock",
+                "Url": "/markets/stan.l/"
+            },
+            {
+                "InstrumentID": 2087,
+                "IsTradable": true,
+                "MarketName": "Severn Trent",
+                "Name": "SVT.L",
+                "TagsText": [
+                    "svt.l",
+                    "$svt.l",
+                    "severn trent",
+                    "$severn trent"
+                ],
+                "TickerText": "SVT.L",
+                "TypeName": "stock",
+                "Url": "/markets/svt.l/"
+            },
+            {
+                "InstrumentID": 2088,
+                "IsTradable": true,
+                "MarketName": "Tate & Lyle",
+                "Name": "TATE.L",
+                "TagsText": [
+                    "tate.l",
+                    "$tate.l",
+                    "tate & lyle",
+                    "$tate & lyle"
+                ],
+                "TickerText": "TATE.L",
+                "TypeName": "stock",
+                "Url": "/markets/tate.l/"
+            },
+            {
+                "InstrumentID": 2089,
+                "IsTradable": true,
+                "MarketName": "Tullow Oil",
+                "Name": "TLW.L",
+                "TagsText": [
+                    "tlw.l",
+                    "$tlw.l",
+                    "tullow oil",
+                    "$tullow oil"
+                ],
+                "TickerText": "TLW.L",
+                "TypeName": "stock",
+                "Url": "/markets/tlw.l/"
+            },
+            {
+                "InstrumentID": 2090,
+                "IsTradable": true,
+                "MarketName": "Travis Perkins",
+                "Name": "TPK.L",
+                "TagsText": [
+                    "tpk.l",
+                    "$tpk.l",
+                    "travis perkins",
+                    "$travis perkins"
+                ],
+                "TickerText": "TPK.L",
+                "TypeName": "stock",
+                "Url": "/markets/tpk.l/"
+            },
+            {
+                "InstrumentID": 2091,
+                "IsTradable": true,
+                "MarketName": "Tesco",
+                "Name": "TSCO.L",
+                "TagsText": [
+                    "tsco.l",
+                    "$tsco.l",
+                    "tesco",
+                    "$tesco"
+                ],
+                "TickerText": "TSCO.L",
+                "TypeName": "stock",
+                "Url": "/markets/tsco.l/"
+            },
+            {
+                "InstrumentID": 2092,
+                "IsTradable": true,
+                "MarketName": "TUI Travel",
+                "Name": "TT.L",
+                "TagsText": [
+                    "tt.l",
+                    "$tt.l",
+                    "tui travel",
+                    "$tui travel"
+                ],
+                "TickerText": "TT.L",
+                "TypeName": "stock",
+                "Url": "/markets/tt.l/"
+            },
+            {
+                "InstrumentID": 2093,
+                "IsTradable": true,
+                "MarketName": "Unilever",
+                "Name": "ULVR.L",
+                "TagsText": [
+                    "ulvr.l",
+                    "$ulvr.l",
+                    "unilever",
+                    "$unilever"
+                ],
+                "TickerText": "ULVR.L",
+                "TypeName": "stock",
+                "Url": "/markets/ulvr.l/"
+            },
+            {
+                "InstrumentID": 2094,
+                "IsTradable": true,
+                "MarketName": "United Utilities",
+                "Name": "UU.L",
+                "TagsText": [
+                    "uu.l",
+                    "$uu.l",
+                    "united utilities",
+                    "$united utilities"
+                ],
+                "TickerText": "UU.L",
+                "TypeName": "stock",
+                "Url": "/markets/uu.l/"
+            },
+            {
+                "InstrumentID": 2096,
+                "IsTradable": true,
+                "MarketName": "Weir Group",
+                "Name": "WEIR.L",
+                "TagsText": [
+                    "weir.l",
+                    "$weir.l",
+                    "weir group",
+                    "$weir group"
+                ],
+                "TickerText": "WEIR.L",
+                "TypeName": "stock",
+                "Url": "/markets/weir.l/"
+            },
+            {
+                "InstrumentID": 2097,
+                "IsTradable": true,
+                "MarketName": "William Hill",
+                "Name": "WMH.L",
+                "TagsText": [
+                    "wmh.l",
+                    "$wmh.l",
+                    "william hill",
+                    "$william hill"
+                ],
+                "TickerText": "WMH.L",
+                "TypeName": "stock",
+                "Url": "/markets/wmh.l/"
+            },
+            {
+                "InstrumentID": 2098,
+                "IsTradable": true,
+                "MarketName": "Wolseley",
+                "Name": "WOS.L",
+                "TagsText": [
+                    "wos.l",
+                    "$wos.l",
+                    "wolseley",
+                    "$wolseley"
+                ],
+                "TickerText": "WOS.L",
+                "TypeName": "stock",
+                "Url": "/markets/wos.l/"
+            },
+            {
+                "InstrumentID": 2099,
+                "IsTradable": true,
+                "MarketName": "WPP",
+                "Name": "WPP.L",
+                "TagsText": [
+                    "wpp.l",
+                    "$wpp.l",
+                    "wpp",
+                    "$wpp"
+                ],
+                "TickerText": "WPP.L",
+                "TypeName": "stock",
+                "Url": "/markets/wpp.l/"
+            },
+            {
+                "InstrumentID": 2100,
+                "IsTradable": true,
+                "MarketName": "Whitbread",
+                "Name": "WTB.L",
+                "TagsText": [
+                    "wtb.l",
+                    "$wtb.l",
+                    "whitbread",
+                    "$whitbread"
+                ],
+                "TickerText": "WTB.L",
+                "TypeName": "stock",
+                "Url": "/markets/wtb.l/"
+            },
+            {
+                "InstrumentID": 100000,
+                "IsTradable": true,
+                "MarketName": "Bitcoin",
+                "Name": "BTC",
+                "TagsText": [
+                    "btc",
+                    "$btc",
+                    "bitcoin",
+                    "$bitcoin"
+                ],
+                "TickerText": "BTC",
+                "TypeName": "stock",
+                "Url": "/markets/btc/"
+            }
+        ],
+        "IsDebug": false,
+        "IsTranslationEnabled": true,
+        "KYCURL": "https://kyc.etoro.com/public/assets/kyc.js",
+        "MarketsCategories": [
+            {
+                "Key": "stocks",
+                "Value": {
+                    "ChildrenList": [
+                        {
+                            "Key": "industry",
+                            "Value": {
+                                "ChildrenList": [
+                                    {
+                                        "Key": "basic-materials",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "basic-materials"
+                                        }
+                                    },
+                                    {
+                                        "Key": "conglomerates",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "conglomerates"
+                                        }
+                                    },
+                                    {
+                                        "Key": "consumer-goods",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "consumer-goods"
+                                        }
+                                    },
+                                    {
+                                        "Key": "financial",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "financial"
+                                        }
+                                    },
+                                    {
+                                        "Key": "healthcare",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "healthcare"
+                                        }
+                                    },
+                                    {
+                                        "Key": "industrial-goods",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "industrial-goods"
+                                        }
+                                    },
+                                    {
+                                        "Key": "services",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "services"
+                                        }
+                                    },
+                                    {
+                                        "Key": "technology",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "technology"
+                                        }
+                                    },
+                                    {
+                                        "Key": "utilities",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "utilities"
+                                        }
+                                    }
+                                ],
+                                "Name": "industry"
+                            }
+                        },
+                        {
+                            "Key": "exchange",
+                            "Value": {
+                                "ChildrenList": [
+                                    {
+                                        "Key": "nasdaq",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "nasdaq"
+                                        }
+                                    },
+                                    {
+                                        "Key": "nyse",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "nyse"
+                                        }
+                                    },
+                                    {
+                                        "Key": "fra",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "fra"
+                                        }
+                                    },
+                                    {
+                                        "Key": "lse",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "lse"
+                                        }
+                                    },
+                                    {
+                                        "Key": "digital-currency",
+                                        "Value": {
+                                            "ChildrenList": [ ],
+                                            "Name": "digital-currency"
+                                        }
+                                    }
+                                ],
+                                "Name": "exchange"
+                            }
+                        }
+                    ],
+                    "Name": "stocks"
+                }
+            },
+            {
+                "Key": "currencies",
+                "Value": {
+                    "ChildrenList": [ ],
+                    "Name": "currencies"
+                }
+            },
+            {
+                "Key": "commodities",
+                "Value": {
+                    "ChildrenList": [ ],
+                    "Name": "commodities"
+                }
+            },
+            {
+                "Key": "indices",
+                "Value": {
+                    "ChildrenList": [ ],
+                    "Name": "indices"
+                }
+            }
+        ],
+        "MixpanelToken": "a46ed246b149568e354e40df267dcbe2",
+        "OpenbookItURL": "https://s3.etoro.com/openbookIt/bookmark.js",
+        "RankingsPopularSearches": [
+            {
+                "Name": "TopMostCopiedTraders",
+                "Period": 180,
+                "Risk": null,
+                "Sort": "Copiers"
+            },
+            {
+                "Name": "MostCopiedSelfTraders",
+                "Period": 180,
+                "Risk": null,
+                "Sort": "Copiers"
+            },
+            {
+                "Name": "FullProfile",
+                "Period": 180,
+                "Risk": "Medium",
+                "Sort": "Copiers"
+            },
+            {
+                "Name": "LowWeeklydd",
+                "Period": 180,
+                "Risk": "Low",
+                "Sort": "Copiers"
+            },
+            {
+                "Name": "FrequentTrader",
+                "Period": 180,
+                "Risk": null,
+                "Sort": "Copiers"
+            },
+            {
+                "Name": "HighWinRatio",
+                "Period": 180,
+                "Risk": "High",
+                "Sort": "Copiers"
+            }
+        ],
+        "SearchAPI": "https://search.etoro.com/api",
+        "StocksRoutingSymbols": [
+            "aapl",
+            "goog",
+            "fb",
+            "msft",
+            "amzn",
+            "yhoo",
+            "znga",
+            "aa",
+            "axp",
+            "ba",
+            "bac",
+            "cat",
+            "csco",
+            "cvx",
+            "dd",
+            "dis",
+            "ge",
+            "hd",
+            "hpq",
+            "ibm",
+            "intc",
+            "jnj",
+            "jpm",
+            "ko",
+            "mcd",
+            "mmm",
+            "mrk",
+            "pfe",
+            "pg",
+            "t",
+            "trv",
+            "unh",
+            "utx",
+            "vz",
+            "wmt",
+            "xom",
+            "c",
+            "hmc",
+            "hbc",
+            "manu",
+            "ma",
+            "nke",
+            "pep",
+            "sne",
+            "tm",
+            "v",
+            "vod",
+            "twx",
+            "db",
+            "cl",
+            "ebay",
+            "teo",
+            "tx",
+            "pbr",
+            "vale",
+            "san",
+            "tef",
+            "amx",
+            "cx",
+            "tv",
+            "sndk",
+            "tsla",
+            "f",
+            "lvs",
+            "lnkd",
+            "nok",
+            "pot",
+            "fslr",
+            "wu",
+            "gps",
+            "rl",
+            "hog",
+            "trip",
+            "ea",
+            "urbn",
+            "adbe",
+            "nflx",
+            "msi",
+            "wdc",
+            "mu",
+            "anf",
+            "agnc",
+            "adsk",
+            "orcl",
+            "lmt",
+            "nvda",
+            "fdx",
+            "nbl",
+            "car",
+            "bidu",
+            "sbux",
+            "amgn",
+            "atvi",
+            "chkp",
+            "mos",
+            "petm",
+            "dps",
+            "stz",
+            "twtr",
+            "king",
+            "sie.de",
+            "bas.de",
+            "sap.de",
+            "bayn.de",
+            "alv.de",
+            "eoan.de",
+            "dai.de",
+            "dte.de",
+            "lin.de",
+            "vow3.de",
+            "bmw.de",
+            "muv2.de",
+            "rwe.de",
+            "fme.de",
+            "ads.de",
+            "dpw.de",
+            "fre.de",
+            "hen3.de",
+            "db1.de",
+            "tka.de",
+            "ifx.de",
+            "sdf.de",
+            "bei.de",
+            "hei.de",
+            "lha.de",
+            "con.de",
+            "aal.l",
+            "abf.l",
+            "adm.l",
+            "adn.l",
+            "agk.l",
+            "aht.l",
+            "amec.l",
+            "anto.l",
+            "arm.l",
+            "av.l",
+            "azn.l",
+            "bab.l",
+            "barc.l",
+            "bats.l",
+            "bg.l",
+            "blnd.l",
+            "blt.l",
+            "bnzl.l",
+            "bp.l",
+            "brby.l",
+            "bsy.l",
+            "bt.l",
+            "cch.l",
+            "ccl.l",
+            "cna.l",
+            "cpg.l",
+            "cpi.l",
+            "dge.l",
+            "expn.l",
+            "ezj.l",
+            "fres.l",
+            "gfs.l",
+            "gkn.l",
+            "glen.l",
+            "gsk.l",
+            "hl.l",
+            "hmso.l",
+            "iag.l",
+            "imi.l",
+            "imt.l",
+            "itrk.l",
+            "itv.l",
+            "jmat.l",
+            "kgf.l",
+            "land.l",
+            "lgen.l",
+            "lloy.l",
+            "lse.l",
+            "mggt.l",
+            "mks.l",
+            "mndi.l",
+            "mro.l",
+            "mrw.l",
+            "ng.l",
+            "nxt.l",
+            "oml.l",
+            "pfc.l",
+            "pru.l",
+            "psn.l",
+            "pson.l",
+            "rb.l",
+            "rbs.l",
+            "rel.l",
+            "rex.l",
+            "rio.l",
+            "rmg.l",
+            "rr.l",
+            "rrs.l",
+            "rsa.l",
+            "rsl.l",
+            "sab.l",
+            "sbry.l",
+            "sdr.l",
+            "shp.l",
+            "sl.l",
+            "smin.l",
+            "sn.l",
+            "spd.l",
+            "sse.l",
+            "stan.l",
+            "svt.l",
+            "tate.l",
+            "tlw.l",
+            "tpk.l",
+            "tsco.l",
+            "tt.l",
+            "ulvr.l",
+            "uu.l",
+            "weir.l",
+            "wmh.l",
+            "wos.l",
+            "wpp.l",
+            "wtb.l",
+            "btc"
+        ],
+        "Version": "2.7.3.10",
+        "WebTraderURL": "/WebTrader/Login"
+    },
+    "Languages": {
+        "Active": [
+            {
+                "Code": "en-gb",
+                "CssClass": "uk",
+                "DisplayName": "English",
+                "DisplayTitle": "UK",
+                "FilePath": "https://s3.etoro.com/localization/en-gb/608acc47-26ff-4106-9baa-e217ef7f43d4.js",
+                "ID": 1
+            }
+        ],
+        "Available": [
+            {
+                "Code": "de-de",
+                "CssClass": "de",
+                "DisplayName": "Deutsch",
+                "DisplayTitle": "DE",
+                "FilePath": "https://s3.etoro.com/localization/de-de/ad766a7b-c077-4763-861a-b1108602f650.js",
+                "ID": 2
+            },
+            {
+                "Code": "zh-cn",
+                "CssClass": "cn",
+                "DisplayName": "中国的",
+                "DisplayTitle": "CN",
+                "FilePath": "https://s3.etoro.com/localization/zh-cn/e5a278df-beb6-408a-ab84-bace6cd1f931.js",
+                "ID": 4
+            },
+            {
+                "Code": "ru-ru",
+                "CssClass": "ru",
+                "DisplayName": "русский",
+                "DisplayTitle": "RU",
+                "FilePath": "https://s3.etoro.com/localization/ru-ru/e9828165-749f-481a-a62f-f9c9911d91e0.js",
+                "ID": 5
+            },
+            {
+                "Code": "es-es",
+                "CssClass": "es",
+                "DisplayName": "Español",
+                "DisplayTitle": "ES",
+                "FilePath": "https://s3.etoro.com/localization/es-es/0e7f96f3-da05-4cad-92ef-fe09dc9ac747.js",
+                "ID": 6
+            },
+            {
+                "Code": "fr-fr",
+                "CssClass": "fr",
+                "DisplayName": "Français",
+                "DisplayTitle": "FR",
+                "FilePath": "https://s3.etoro.com/localization/fr-fr/c38f114c-8145-4774-8fdd-299d75c8edca.js",
+                "ID": 7
+            },
+            {
+                "Code": "it-it",
+                "CssClass": "it",
+                "DisplayName": "Italiano",
+                "DisplayTitle": "IT",
+                "FilePath": "https://s3.etoro.com/localization/it-it/e4ab7479-84a5-4fc9-b91b-1ac206cf9182.js",
+                "ID": 8
+            },
+            {
+                "Code": "ja-jp",
+                "CssClass": "jp",
+                "DisplayName": "日本の",
+                "DisplayTitle": "JP",
+                "FilePath": "https://s3.etoro.com/localization/ja-jp/21030ea6-8180-4c64-a4f0-3847be3ff02e.js",
+                "ID": 9
+            },
+            {
+                "Code": "pt-pt",
+                "CssClass": "pt",
+                "DisplayName": "Português",
+                "DisplayTitle": "PT",
+                "FilePath": "https://s3.etoro.com/localization/pt-pt/8bfc158a-bc9e-4ae3-88d2-4dcebabcd22f.js",
+                "ID": 10
+            },
+            {
+                "Code": "hu-hu",
+                "CssClass": "hu",
+                "DisplayName": "Magyar",
+                "DisplayTitle": "HU",
+                "FilePath": "https://s3.etoro.com/localization/hu-hu/006d21a4-78a1-461b-b60f-9a9ba3b2a8c4.js",
+                "ID": 16
+            }
+        ]
+    },
+    "ServerTime": "2014,8,13,9,52,9",
+    "UserStatus": {
+        "AffiliateID": 0,
+        "AllowCommunity": true,
+        "Culture": "en-gb",
+        "IsEtoroUser": false,
+        "IsGuru": false,
+        "IsLoggedIn": false,
+        "Timeout": 0,
+        "Token": null,
+        "User": {
+            "AllowDisplayFullName": false,
+            "Avatars": {
+                "Large": "https://s3.etoro.com/images/default-avatars/150x150.png",
+                "Medium": "https://s3.etoro.com/images/default-avatars/50x50.png",
+                "Small": "https://s3.etoro.com/images/default-avatars/35x35.png"
+            },
+            "CID": 0,
+            "Country": null,
+            "Culture": null,
+            "FeedLocked": false,
+            "FirstName": null,
+            "GCID": 0,
+            "IsAllowShareFollow": null,
+            "IsFirstLogin": false,
+            "KAID": 0,
+            "LastName": null,
+            "OptIn": true,
+            "SocialIndex": null,
+            "SplitUserStreamAllowed": false,
+            "Stars": "0",
+            "Token": null,
+            "TotalCopiers": 0,
+            "TotalFollows": 0,
+            "URL": "/visitor/",
+            "UserType": "User",
+            "Username": "visitor"
+        },
+        "Username": "visitor"
+    },
+    "Weekend": {
+        "CultureCode": "en-gb",
+        "Resources": { "Content": "The markets are closed during the weekend. Trading activity feed is still showing orders" }
+    }
+}
