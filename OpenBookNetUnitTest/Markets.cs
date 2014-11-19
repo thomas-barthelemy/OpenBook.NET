@@ -1,7 +1,7 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace OpenbookUnitTest
+namespace OpenBookNetUnitTest
 {
     /// <summary>
     /// Markets related unit tests
