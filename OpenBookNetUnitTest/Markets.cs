@@ -16,7 +16,7 @@ namespace OpenBookNetUnitTest
         }
 
         [TestMethod]
-        public void GetTopIndicies()
+        public void GetTopIndices()
         {
             throw new NotImplementedException();
         }

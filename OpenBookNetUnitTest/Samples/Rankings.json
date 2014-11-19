@@ -1,22 +1,285 @@
 ﻿{
-    "Count": 0,
-    "CultureCode": "en-gb",
-    "Pagination": {
-        "CultureCode": "en-gb",
-        "CurrentPage": 1,
-        "CurrentPageResults": 0,
-        "MaxItemsPerPage": 10,
-        "Resources": {
-            "first": "First",
-            "last": "Last",
-            "more": "More",
-            "next": "Next",
-            "paginationCenter": "of 0 Traders",
-            "prev": "Previous"
-        },
-        "Tag": null,
-        "TotalResults": 0
+  "Users": [
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -0px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 75,
+      "MaxDrawDown": 8.1,
+      "CID": 3958120,
+      "Username": "JakeOudes",
+      "AllowDisplayFullName": true,
+      "FirstName": "Jacob",
+      "LastName": "Oudes",
+      "URL": "\/jakeoudes\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/3958120\/1.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/3958120\/1.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/3958120\/1.jpg"
+      },
+      "Country": {
+        "Name": "United Kingdom",
+        "A2": "gb",
+        "Code": 218,
+        "PhonePrefix": 44
+      },
+      "Copiers": 380,
+      "Velocity": 0.6668,
+      "Gain": 27.204590054973,
+      "Rank": 1
     },
-    "Resources": { },
-    "Users": [ ]
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -26px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 0,
+      "MaxDrawDown": 0,
+      "CID": 1430416,
+      "Username": "Verisimilitude",
+      "AllowDisplayFullName": true,
+      "FirstName": "George",
+      "LastName": "Stewart",
+      "URL": "\/verisimilitude\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/1430416.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/1430416.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/1430416.jpg"
+      },
+      "Country": {
+        "Name": "United Kingdom",
+        "A2": "gb",
+        "Code": 218,
+        "PhonePrefix": 44
+      },
+      "Copiers": 256,
+      "Velocity": 0,
+      "Gain": 32.457241665762,
+      "Rank": 2
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -52px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 100,
+      "MaxDrawDown": 0,
+      "CID": 2159890,
+      "Username": "Gslavan",
+      "AllowDisplayFullName": false,
+      "FirstName": null,
+      "LastName": null,
+      "URL": "\/gslavan\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/2159890.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/2159890.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/2159890.jpg"
+      },
+      "Country": {
+        "Name": "Russia",
+        "A2": "ru",
+        "Code": 169,
+        "PhonePrefix": 7
+      },
+      "Copiers": 111,
+      "Velocity": 0.3733,
+      "Gain": 418.42352988859,
+      "Rank": 3
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -78px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 75,
+      "MaxDrawDown": 0.11,
+      "CID": 2379103,
+      "Username": "Heinzgerhard",
+      "AllowDisplayFullName": true,
+      "FirstName": "Christa",
+      "LastName": "Pueschel",
+      "URL": "\/heinzgerhard\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/2379103\/2.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/2379103\/2.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/2379103\/2.jpg"
+      },
+      "Country": {
+        "Name": "Germany",
+        "A2": "de",
+        "Code": 79,
+        "PhonePrefix": 49
+      },
+      "Copiers": 66,
+      "Velocity": 0.4219,
+      "Gain": 18.169773093705,
+      "Rank": 4
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -104px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 75,
+      "MaxDrawDown": 3.36,
+      "CID": 2974386,
+      "Username": "dtania1973",
+      "AllowDisplayFullName": true,
+      "FirstName": "Tatjana",
+      "LastName": "Dulinskiene",
+      "URL": "\/dtania1973\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/2974386.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/2974386.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/2974386.jpg"
+      },
+      "Country": {
+        "Name": "Lithuania",
+        "A2": "lt",
+        "Code": 118,
+        "PhonePrefix": 370
+      },
+      "Copiers": 28,
+      "Velocity": 0.2193,
+      "Gain": 18.93356001799,
+      "Rank": 5
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -130px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 75,
+      "MaxDrawDown": 6.91,
+      "CID": 3150985,
+      "Username": "QAZWIAMIL",
+      "AllowDisplayFullName": false,
+      "FirstName": null,
+      "LastName": null,
+      "URL": "\/qazwiamil\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/3150985.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/3150985.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/3150985.jpg"
+      },
+      "Country": {
+        "Name": "Israel",
+        "A2": "il",
+        "Code": 101,
+        "PhonePrefix": 972
+      },
+      "Copiers": 26,
+      "Velocity": 0.6806,
+      "Gain": 288.62288113371,
+      "Rank": 6
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -156px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 25,
+      "MaxDrawDown": 7.92,
+      "CID": 2270574,
+      "Username": "milkiway10",
+      "AllowDisplayFullName": false,
+      "FirstName": null,
+      "LastName": null,
+      "URL": "\/milkiway10\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/2270574.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/2270574.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/2270574.jpg"
+      },
+      "Country": {
+        "Name": "Austria",
+        "A2": "at",
+        "Code": 13,
+        "PhonePrefix": 43
+      },
+      "Copiers": 21,
+      "Velocity": 0.11,
+      "Gain": 17.824184566428,
+      "Rank": 7
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -182px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 75,
+      "MaxDrawDown": 0.26,
+      "CID": 3026874,
+      "Username": "JanLipka",
+      "AllowDisplayFullName": true,
+      "FirstName": "Jan",
+      "LastName": "Lipka",
+      "URL": "\/janlipka\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/3026874.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/3026874.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/3026874.jpg"
+      },
+      "Country": {
+        "Name": "Czech Republic",
+        "A2": "cz",
+        "Code": 55,
+        "PhonePrefix": 420
+      },
+      "Copiers": 18,
+      "Velocity": 0.0876,
+      "Gain": 16.014276113004,
+      "Rank": 8
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -208px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 0,
+      "MaxDrawDown": 0,
+      "CID": 1706348,
+      "Username": "MrSevy",
+      "AllowDisplayFullName": false,
+      "FirstName": null,
+      "LastName": null,
+      "URL": "\/mrsevy\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/1706348.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/1706348.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/1706348.jpg"
+      },
+      "Country": {
+        "Name": "Italy",
+        "A2": "it",
+        "Code": 102,
+        "PhonePrefix": 39
+      },
+      "Copiers": 13,
+      "Velocity": 0,
+      "Gain": 47.871132762505,
+      "Rank": 9
+    },
+    {
+      "Ribbon": "<div class=\"item-rank\">\r\n                        <div style=\"background-position: 0 -234px\"><\/div>\r\n                    <\/div>",
+      "ProfitableWeeks": 100,
+      "MaxDrawDown": 0,
+      "CID": 3590219,
+      "Username": "tarcisse",
+      "AllowDisplayFullName": false,
+      "FirstName": null,
+      "LastName": null,
+      "URL": "\/tarcisse\/",
+      "Avatars": {
+        "Small": "https:\/\/s3.etoro.com\/images\/users-avatars\/35X35\/3590219.jpg",
+        "Medium": "https:\/\/s3.etoro.com\/images\/users-avatars\/50X50\/3590219.jpg",
+        "Large": "https:\/\/s3.etoro.com\/images\/users-avatars\/150X150\/3590219.jpg"
+      },
+      "Country": {
+        "Name": "France",
+        "A2": "fr",
+        "Code": 74,
+        "PhonePrefix": 33
+      },
+      "Copiers": 12,
+      "Velocity": 0.365,
+      "Gain": 1215.6531032292,
+      "Rank": 10
+    }
+  ],
+  "Count": 10,
+  "Pagination": {
+    "CurrentPage": 1,
+    "TotalResults": 195,
+    "CurrentPageResults": 10,
+    "Tag": null,
+    "MaxItemsPerPage": 10,
+    "Resources": {
+      "first": "First",
+      "last": "Last",
+      "next": "Next",
+      "prev": "Previous",
+      "more": "More",
+      "paginationCenter": "of 195 Traders"
+    },
+    "CultureCode": "en-gb"
+  },
+  "Resources": {
+    
+  },
+  "CultureCode": "en-gb"
 }
