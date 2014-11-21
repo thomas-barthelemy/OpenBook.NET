@@ -14,5 +14,8 @@
         public double Velocity { get; set; }
         public double Gain { get; set; }
         public int Rank { get; set; }
+
+        public Country Country { get; set; }
+        public UserAvatars Avatars { get; set; }
     }
 }
