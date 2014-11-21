@@ -1,4 +1,4 @@
-﻿namespace OpenBook
+﻿namespace OpenBook.Models
 {
     public struct Country
     {

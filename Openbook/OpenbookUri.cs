@@ -16,9 +16,9 @@
         ///     Gets the top ranking users depending on the filters
         ///     Known parameters and values:
         ///         period => Number of days (e.g. 30, 90)
-        ///         riskLevel => low, ??
-        ///         sort => copiers, ??
-        ///         pageNumber => Page requested starting 1
+        ///         riskLevel => low, medium, high
+        ///         sort => copiers, gain
+        ///         pageNumber => (Optional) Page requested (default to 1)
         /// </summary>
         public const string Rankings = BaseUri + "/Rankings/";
 
