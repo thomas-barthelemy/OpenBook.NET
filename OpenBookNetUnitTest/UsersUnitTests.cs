@@ -7,7 +7,7 @@ namespace OpenBookNetUnitTest
     /// Users related unit tests
     /// </summary>
     [TestClass]
-    public class User
+    public class UsersUnitTests
     {
         [TestMethod]
         public void GetTopUserByCopiers()
