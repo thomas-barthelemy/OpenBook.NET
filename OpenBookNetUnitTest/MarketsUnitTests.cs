@@ -7,7 +7,7 @@ namespace OpenBookNetUnitTest
     /// Markets related unit tests
     /// </summary>
     [TestClass]
-    public class Markets
+    public class MarketsUnitTests
     {
         [TestMethod]
         public void GetTopStocks()
