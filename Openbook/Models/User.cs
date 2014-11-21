@@ -2,7 +2,7 @@
 {
     public class User
     {
-        public int ProfitableWeeks { get; set; }
+        public double ProfitableWeeks { get; set; }
         public double MaxDrawDown { get; set; }
         public long CID { get; set; }
         public string Username { get; set; }
