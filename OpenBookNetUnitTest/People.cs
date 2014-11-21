@@ -4,31 +4,31 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace OpenBookNetUnitTest
 {
     /// <summary>
-    /// Peoples related unit tests
+    /// Users related unit tests
     /// </summary>
     [TestClass]
-    public class People
+    public class User
     {
         [TestMethod]
-        public void GetTopPeopleByCopiers()
+        public void GetTopUserByCopiers()
         {
             throw new NotImplementedException();
         }
 
         [TestMethod]
-        public void GetTopPeopleByGains()
+        public void GetTopUserByGains()
         {
             throw new NotImplementedException();
         }
 
         [TestMethod]
-        public void GetPeopleFeed()
+        public void GetUserFeed()
         {
             throw new NotImplementedException();
         }
 
         [TestMethod]
-        public void GetPeopleStats()
+        public void GetUserStats()
         {
             throw new NotImplementedException();
         }
