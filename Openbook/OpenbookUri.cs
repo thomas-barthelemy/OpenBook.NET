@@ -13,7 +13,7 @@
         public const string BaseUri = Protocol + Hostname + "/API";
 
         /// <summary>
-        ///     Gets the top ranking people depending on the filters
+        ///     Gets the top ranking users depending on the filters
         ///     Known parameters and values:
         ///         period => Number of days (e.g. 30, 90)
         ///         riskLevel => low, ??
@@ -37,7 +37,7 @@
             public const string BaseApiUri = BaseUri + "/Search";
 
             /// <summary>
-            ///     Gets details one or more specific peoples
+            ///     Gets details one or more specific users
             ///     Known parameters and values:
             ///         usernames => ["username1", "username2", ..., "usernamex"]
             ///         timeFrame => Number of days (e.g. 30, 90)
