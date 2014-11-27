@@ -43,11 +43,22 @@ namespace OpenBook
                 {"riskLevel", riskLevel.ToString()},
                 {"pageNumber", pageNumber.ToString()}
             };
-            var uri = GetQueryUri(OpenbookUri.Rankings, query);
+            
+            return await GetResult<RankingResult>(OpenbookUri.Rankings, query);
+        }
 
-            var jsonResult = await _client.GetStringAsync(uri);
+        public async Task<AdditionalDataResult> GetAdditionalData(
+            ICollection<string> usernames, int period = 30)
+        {
+            var userParam = "[" + string.Join(", ", usernames) + "]";
+            var query = new Dictionary<string, string>
+            {
+                {"period", period.ToString()},
+                {"usernames", userParam}
+            };
 
-            return JsonConvert.DeserializeObject<RankingResult>(jsonResult);
+            return await GetResult<AdditionalDataResult>(
+                OpenbookUri.Search.AdditionalData, query);
         }
 
         internal Uri GetQueryUri(string baseUri, IDictionary<string, string> queryParams)
@@ -58,6 +69,14 @@ namespace OpenBook
                 queryParams.Select(pair => string.Format("{0}={1}", pair.Key, pair.Value));
             builder.Query = string.Join("&", queries);
             return builder.Uri;
+        }
+
+        internal async Task<T> GetResult<T>(string baseUri,
+            IDictionary<string, string> queryParams)
+        {
+            var uri = GetQueryUri(baseUri, queryParams);
+            var jsonResult = await _client.GetStringAsync(uri);
+            return JsonConvert.DeserializeObject<T>(jsonResult);
         }
     }
 }
