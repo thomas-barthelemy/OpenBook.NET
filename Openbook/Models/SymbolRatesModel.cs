@@ -10,7 +10,7 @@ namespace OpenBook.Models
         // ReSharper disable once StringLiteralTypo
         // API has a typo =(
         [JsonProperty(PropertyName = "PeriodChangePrecent")]
-        public double PeriodChangePercent;
-        public double PeriodChangeValue;
+        public double? PeriodChangePercent;
+        public double? PeriodChangeValue;
     }
 }
