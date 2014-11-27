@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenBook;
+using OpenBook.Models.ApiResults;
 
 namespace OpenBookNetUnitTest
 {
@@ -43,25 +44,22 @@ namespace OpenBookNetUnitTest
         [TestMethod]
         public void GetTopStocks()
         {
-            throw new NotImplementedException();
-        }
-
-        [TestMethod]
-        public void GetTopIndices()
-        {
-            throw new NotImplementedException();
+            var result = _client.GetFeaturedSymbols(MarketCategory.Stocks).Result;
+            CheckCategorizedFeaturedSymbol(result);
         }
 
         [TestMethod]
         public void GetTopCurrencies()
         {
-            throw new NotImplementedException();
+            var result = _client.GetFeaturedSymbols(MarketCategory.Currencies).Result;
+            CheckCategorizedFeaturedSymbol(result);
         }
 
         [TestMethod]
         public void GetTopCommodities()
         {
-            throw new NotImplementedException();
+            var result = _client.GetFeaturedSymbols(MarketCategory.Commodities).Result;
+            CheckCategorizedFeaturedSymbol(result);
         }
 
         [TestMethod]
@@ -74,6 +72,20 @@ namespace OpenBookNetUnitTest
         public void GetCommodityFeed()
         {
             throw new NotImplementedException();
+        }
+
+        private void CheckCategorizedFeaturedSymbol(MarketCategoriesResult result)
+        {
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.Symbols);
+
+            foreach (var symbol in result.Symbols)
+            {
+                Assert.IsNotNull(symbol);
+                Assert.IsNotNull(symbol.Symbol);
+                Assert.IsNotNull(symbol.SymbolRatesModel);
+                Assert.IsNotNull(symbol.SymbolRatesModel.Rates);
+            }
         }
     }
 }
