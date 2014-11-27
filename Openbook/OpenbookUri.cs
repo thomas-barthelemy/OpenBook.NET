@@ -25,7 +25,7 @@
         /// <summary>
         ///     Gets the 5 top ranking users by copiers on a 3, 6 and 9 month period.
         /// </summary>
-        public const string TopPerformers = BaseUri + "/TopPerformers/";
+        public const string TopPerformers = Rankings + "/TopPerformers/";
 
         public struct ClientInformation
         {
