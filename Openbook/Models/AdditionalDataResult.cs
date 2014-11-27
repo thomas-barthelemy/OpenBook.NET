@@ -2,10 +2,8 @@
 
 namespace OpenBook.Models
 {
-    public class AdditionalDataResult
+    public class AdditionalDataResult : Dictionary<string, AdditionalDataResult.UserData>
     {
-        public List<UserData> Users { get; set; }
-
         public class UserData
         {
             public int CopiersLastWeek { get; set; }

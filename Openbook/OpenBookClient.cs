@@ -47,10 +47,22 @@ namespace OpenBook
             return await GetResult<RankingResult>(OpenbookUri.Rankings, query);
         }
 
+        /// <summary>
+        ///     Gets additional data about one or more specified user over
+        ///     the specified period.
+        /// </summary>
+        /// <param name="usernames">
+        ///     A collection of usernames that will be searched
+        /// </param>
+        /// <param name="period">
+        ///     The period in days to search into.
+        ///     (Default: 30 days)
+        /// </param>
+        /// <returns><see cref="AdditionalDataResult"/></returns>
         public async Task<AdditionalDataResult> GetAdditionalData(
             ICollection<string> usernames, int period = 30)
         {
-            var userParam = "[" + string.Join(", ", usernames) + "]";
+            var userParam = "[\"" + string.Join("\", \"", usernames) + "\"]";
             var query = new Dictionary<string, string>
             {
                 {"period", period.ToString()},
