@@ -17,4 +17,11 @@
         Medium,
         High
     }
+
+    public enum MarketCategory
+    {
+        Commodities,
+        Currencies,
+        Stocks
+    }
 }

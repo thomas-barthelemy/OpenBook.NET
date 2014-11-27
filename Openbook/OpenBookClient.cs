@@ -93,7 +93,24 @@ namespace OpenBook
         public async Task<FeaturedSymbolsResult> GetFeaturedSymbols()
         {
             return await GetResult<FeaturedSymbolsResult>(OpenbookUri.Markets.Index);
-        } 
+        }
+
+        /// <summary>
+        ///     Gets the featured / top symbols of the specified category.
+        /// </summary>
+        /// <param name="category">A type of symbol</param>
+        /// <returns><see cref="MarketCategoriesResult"/></returns>
+        public async Task<MarketCategoriesResult> GetFeaturedSymbols(
+            MarketCategory category)
+        {
+            var query = new Dictionary<string, string>
+            {
+                {"category", category.ToString().ToLower()}
+            };
+
+            return await GetResult<MarketCategoriesResult>(
+                OpenbookUri.Markets.Category, query);
+        }
 
         internal Uri GetQueryUri(string baseUri,
             IDictionary<string, string> queryParams = null)
