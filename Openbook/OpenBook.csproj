@@ -37,13 +37,13 @@
     <Compile Include="Models\ApiResults\AdditionalDataResult.cs" />
     <Compile Include="Models\ApiResults\LocalizedResultBase.cs" />
     <Compile Include="Models\ApiResults\FeaturedSymbolsResult.cs" />
+    <Compile Include="Models\ApiResults\MarketCategoriesResult.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Market.cs" />
     <Compile Include="Models\Pagination.cs" />
     <Compile Include="Models\ApiResults\RankingResult.cs" />
     <Compile Include="Models\Symbol.cs" />
-    <Compile Include="Models\SymbolRatesModel.cs" />
     <Compile Include="OpenBookClient.cs" />
     <Compile Include="OpenBookParams.cs" />
     <Compile Include="OpenbookUri.cs" />
