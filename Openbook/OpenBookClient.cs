@@ -77,10 +77,23 @@ namespace OpenBook
                 OpenbookUri.Search.AdditionalData, query);
         }
 
+        /// <summary>
+        ///     Gets the 5 top ranking users by copiers on a 3, 6 and 9 month period.
+        /// </summary>
+        /// <returns><see cref="TopPerformersResult"/></returns>
         public async Task<TopPerformersResult> GetTopPerformers()
         {
             return await GetResult<TopPerformersResult>(OpenbookUri.TopPerformers);
         }
+
+        /// <summary>
+        ///     Gets a set of the featured symbols.
+        /// </summary>
+        /// <returns><see cref="FeaturedSymbolsResult"/></returns>
+        public async Task<FeaturedSymbolsResult> GetFeaturedSymbols()
+        {
+            return await GetResult<FeaturedSymbolsResult>(OpenbookUri.Markets.Index);
+        } 
 
         internal Uri GetQueryUri(string baseUri,
             IDictionary<string, string> queryParams = null)
