@@ -2,7 +2,7 @@
 
 namespace OpenBook.Models.ApiResults
 {
-    class MarketResult
+    public class FeaturedSymbolsResult
     {
         public List<SymbolsData> FeaturedSymbols { get; set; }
         public List<CategoryData> Categories { get; set; }
