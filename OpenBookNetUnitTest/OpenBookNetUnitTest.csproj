@@ -58,6 +58,7 @@
   <ItemGroup>
     <None Include="Samples\ClientInfo.json" />
     <None Include="Samples\Market.json" />
+    <None Include="Samples\Markets-Category.json" />
     <None Include="Samples\Rankings.json" />
     <None Include="Samples\Search-AdditionalData.json" />
     <None Include="Samples\TopPerformers.json" />
