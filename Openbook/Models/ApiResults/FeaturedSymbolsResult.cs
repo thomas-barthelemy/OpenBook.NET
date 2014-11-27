@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace OpenBook.Models.ApiResults
 {
@@ -7,12 +6,6 @@ namespace OpenBook.Models.ApiResults
     {
         public List<SymbolsData> FeaturedSymbols { get; set; }
         public List<CategoryData> Categories { get; set; }
-
-        public class SymbolsData
-        {
-            public Symbol Symbol { get; set; }
-            public SymbolRatesModel SymbolRatesModel { get; set; }
-        }
 
         public class CategoryData
         {
@@ -22,14 +15,17 @@ namespace OpenBook.Models.ApiResults
 
         public struct SymbolRatesModel
         {
+            public int InstrumentID;
+            public double? PeriodChangePrecent;
+            public double? PeriodChangeValue;
             public int Precision;
             public double Price;
-            public int InstrumentID;
-            // ReSharper disable once StringLiteralTypo
-            // API has a typo =(
-            [JsonProperty(PropertyName = "PeriodChangePrecent")]
-            public double? PeriodChangePercent;
-            public double? PeriodChangeValue;
+        }
+
+        public class SymbolsData
+        {
+            public Symbol Symbol { get; set; }
+            public SymbolRatesModel SymbolRatesModel { get; set; }
         }
     }
 }

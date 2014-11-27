@@ -37,6 +37,7 @@
     <Compile Include="Models\ApiResults\AdditionalDataResult.cs" />
     <Compile Include="Models\ApiResults\LocalizedResultBase.cs" />
     <Compile Include="Models\ApiResults\FeaturedSymbolsResult.cs" />
+    <Compile Include="Models\ApiResults\MarketCategoriesResult.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Market.cs" />
