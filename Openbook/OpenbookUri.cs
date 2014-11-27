@@ -49,5 +49,10 @@
             /// </summary>
             public const string AdditionalData = BaseApiUri + "/AdditionalData/";
         }
+
+        public struct Markets
+        {
+            public const string Index = BaseUri + "/Markets/index";
+        }
     }
 }
