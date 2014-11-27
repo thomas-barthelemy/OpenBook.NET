@@ -35,8 +35,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Models\ApiResults\AdditionalDataResult.cs" />
-    <Compile Include="Models\ApiResults\LocalizedResult.cs" />
-    <Compile Include="Models\ApiResults\MarketResult.cs" />
+    <Compile Include="Models\ApiResults\LocalizedResultBase.cs" />
+    <Compile Include="Models\ApiResults\FeaturedSymbolsResult.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Market.cs" />
