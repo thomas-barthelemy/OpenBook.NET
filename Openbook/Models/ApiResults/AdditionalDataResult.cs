@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OpenBook.Models
+namespace OpenBook.Models.ApiResults
 {
     public class AdditionalDataResult : Dictionary<string, AdditionalDataResult.UserData>
     {
@@ -10,10 +10,9 @@ namespace OpenBook.Models
             public LastActivityData LastActivity { get; set; }
             public PNLData PNL { get; set; }
 
-            public class LastActivityData
+            public class LastActivityData : LocalizedResultBase
             {
                 public ActivityData Activity { get; set; }
-                public string CultureCode { get; set; }
                 public string GUID { get; set; }
                 public bool IsCurrentUserFlagged { get; set; }
                 public bool IsCurrentUserFollowing { get; set; }
@@ -23,7 +22,6 @@ namespace OpenBook.Models
                 public Market Market { get; set; }
                 public User Owner { get; set; }
                 public string PublishDate { get; set; }
-                public Dictionary<string,string> Resources { get; set; }
 
                 public struct ActivityData
                 {

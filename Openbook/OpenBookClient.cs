@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using OpenBook.Models;
+using OpenBook.Models.ApiResults;
 
 namespace OpenBook
 {
@@ -29,7 +29,9 @@ namespace OpenBook
         ///     (Default: 30 days)
         /// </param>
         /// <param name="pageNumber">The requested page. (Default: 1st page)</param>
-        /// <returns><see cref="RankingResult"/></returns>
+        /// <returns>
+        ///     <see cref="RankingResult" />
+        /// </returns>
         public async Task<RankingResult> GetRankingAsync(
             SortBy sortBy,
             RiskLevel riskLevel,
@@ -43,7 +45,7 @@ namespace OpenBook
                 {"riskLevel", riskLevel.ToString()},
                 {"pageNumber", pageNumber.ToString()}
             };
-            
+
             return await GetResult<RankingResult>(OpenbookUri.Rankings, query);
         }
 
@@ -58,7 +60,9 @@ namespace OpenBook
         ///     The period in days to search into.
         ///     (Default: 30 days)
         /// </param>
-        /// <returns><see cref="AdditionalDataResult"/></returns>
+        /// <returns>
+        ///     <see cref="AdditionalDataResult" />
+        /// </returns>
         public async Task<AdditionalDataResult> GetAdditionalData(
             ICollection<string> usernames, int period = 30)
         {
@@ -73,9 +77,18 @@ namespace OpenBook
                 OpenbookUri.Search.AdditionalData, query);
         }
 
-        internal Uri GetQueryUri(string baseUri, IDictionary<string, string> queryParams)
+        public async Task<TopPerformersResult> GetTopPerformers()
+        {
+            return await GetResult<TopPerformersResult>(OpenbookUri.TopPerformers);
+        }
+
+        internal Uri GetQueryUri(string baseUri,
+            IDictionary<string, string> queryParams = null)
         {
             var builder = new UriBuilder(baseUri);
+
+            // Return the base URI if no parameters are provided
+            if (queryParams == null || queryParams.Count <= 0) return builder.Uri;
 
             var queries =
                 queryParams.Select(pair => string.Format("{0}={1}", pair.Key, pair.Value));
@@ -84,7 +97,7 @@ namespace OpenBook
         }
 
         internal async Task<T> GetResult<T>(string baseUri,
-            IDictionary<string, string> queryParams)
+            IDictionary<string, string> queryParams = null)
         {
             var uri = GetQueryUri(baseUri, queryParams);
             var jsonResult = await _client.GetStringAsync(uri);

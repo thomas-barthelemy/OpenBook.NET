@@ -4,9 +4,9 @@
     ///     Constants for OpenBooks API URIs
     /// </summary>
     /// <remarks>
-    ///     Apis seems to take a '_' parameter that seems to be the current user token
+    ///     APIs seems to take a '_' parameter that seems to be the current user token
     /// </remarks>
-    class OpenbookUri
+    public struct OpenbookUri
     {
         public const string Protocol = "https://";
         public const string Hostname = "openbook.etoro.com";
@@ -22,7 +22,12 @@
         /// </summary>
         public const string Rankings = BaseUri + "/Rankings/";
 
-        public class ClientInformation
+        /// <summary>
+        ///     Gets the 5 top ranking users by copiers on a 3, 6 and 9 month period.
+        /// </summary>
+        public const string TopPerformers = Rankings + "/TopPerformers/";
+
+        public struct ClientInformation
         {
             public const string BaseApiUri = BaseUri + "/ClientInformation/";
 
@@ -32,14 +37,14 @@
             public const string Information = BaseApiUri + "/Information/";
         }
 
-        public class Search
+        public struct Search
         {
             public const string BaseApiUri = BaseUri + "/Search";
 
             /// <summary>
             ///     Gets details one or more specific users
             ///     Known parameters and values:
-            ///         usernames => ["username1", "username2", ..., "usernamex"]
+            ///         usernames => ["username1", "username2", ..., "usernameX"]
             ///         timeFrame => Number of days (e.g. 30, 90)
             /// </summary>
             public const string AdditionalData = BaseApiUri + "/AdditionalData/";

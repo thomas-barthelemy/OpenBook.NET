@@ -59,6 +59,7 @@
     <None Include="Samples\ClientInfo.json" />
     <None Include="Samples\Rankings.json" />
     <None Include="Samples\Search-AdditionalData.json" />
+    <None Include="Samples\TopPerformers.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Openbook\OpenBook.csproj">
