@@ -29,7 +29,7 @@
 
         public struct ClientInformation
         {
-            public const string BaseApiUri = BaseUri + "/ClientInformation/";
+            internal const string BaseApiUri = BaseUri + "/ClientInformation/";
 
             /// <summary>
             ///     Gets the current user information and features available to him
@@ -39,7 +39,7 @@
 
         public struct Search
         {
-            public const string BaseApiUri = BaseUri + "/Search";
+            internal const string BaseApiUri = BaseUri + "/Search";
 
             /// <summary>
             ///     Gets details one or more specific users
@@ -52,7 +52,24 @@
 
         public struct Markets
         {
-            public const string Index = BaseUri + "/Markets/index";
+            internal const string BaseApiUri = BaseUri + "/Markets";
+
+            /// <summary>
+            ///     Gets a set of featured symbols from currencies, stocks and
+            ///     commodities.
+            /// </summary>
+            /// <remarks>
+            ///     Surprisingly any unknown sub query of /Markets will give
+            ///     this same result.
+            /// </remarks>>
+            public const string Index = BaseApiUri + "/index";
+
+            /// <summary>
+            ///     Gets a set of featured specified symbol.
+            ///     Known Parameters and values:
+            ///         category => currencies, stocks, commodities
+            /// </summary>
+            public const string Category = BaseApiUri + "/Category";
         }
     }
 }
