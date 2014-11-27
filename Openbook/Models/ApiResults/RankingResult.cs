@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OpenBook.Models
+namespace OpenBook.Models.ApiResults
 {
     public class RankingResult
     {

@@ -34,11 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Models\AdditionalDataResult.cs" />
+    <Compile Include="Models\ApiResults\AdditionalDataResult.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Market.cs" />
     <Compile Include="Models\Pagination.cs" />
-    <Compile Include="Models\RankingResult.cs" />
+    <Compile Include="Models\ApiResults\RankingResult.cs" />
     <Compile Include="Models\Symbol.cs" />
     <Compile Include="OpenBookClient.cs" />
     <Compile Include="OpenBookParams.cs" />

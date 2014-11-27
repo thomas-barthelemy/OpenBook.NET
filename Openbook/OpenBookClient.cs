@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using OpenBook.Models;
+using OpenBook.Models.ApiResults;
 
 namespace OpenBook
 {

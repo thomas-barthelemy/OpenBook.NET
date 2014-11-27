@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenBook;
 using OpenBook.Models;
+using OpenBook.Models.ApiResults;
 
 namespace OpenBookNetUnitTest
 {
