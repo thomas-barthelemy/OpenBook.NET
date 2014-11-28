@@ -71,5 +71,19 @@
             /// </summary>
             public const string Category = BaseApiUri + "/Category";
         }
+
+        public static class Users
+        {
+            internal const string BaseApiUri = BaseUri + "/Users";
+
+            /// <summary>
+            ///     Gets basic stats information about the specified user.
+            ///     The usernamed is not specified as a GET parameter but in the URI:
+            ///     /PreviewStats/username/
+            ///     So the username should be appended after this URI.
+            ///     (i.e. var uri = Users.PreviewStats + "username";)
+            /// </summary>
+            public const string PreviewStats = BaseApiUri + "/PreviewStats/";
+        }
     }
 }
