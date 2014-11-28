@@ -112,6 +112,12 @@ namespace OpenBook
                 OpenbookUri.Markets.Category, query);
         }
 
+        public async Task<UserPreviewStatsResult> GetPreviewStats(string username)
+        {
+            return await GetResult<UserPreviewStatsResult>(
+                OpenbookUri.Users.PreviewStats + username);
+        }
+
         internal Uri GetQueryUri(string baseUri,
             IDictionary<string, string> queryParams = null)
         {

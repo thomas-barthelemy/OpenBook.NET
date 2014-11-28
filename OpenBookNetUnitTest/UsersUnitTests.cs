@@ -13,6 +13,8 @@ namespace OpenBookNetUnitTest
     public class UsersUnitTests
     {
         private readonly OpenBookClient _client = new OpenBookClient();
+        private readonly string[] _sampleUsers = { "BestTraders", "Dimitrios1", "Greenlander88" };
+
 
         [TestMethod]
         public void GetTopUserByCopiers()
@@ -32,15 +34,14 @@ namespace OpenBookNetUnitTest
         [TestMethod]
         public void GetUserAdditionalData()
         {
-            var users = new [] {"BestTraders", "Dimitrios1", "Greenlander88"};
-            var result = _client.GetAdditionalData(users).Result;
+            var result = _client.GetAdditionalData(_sampleUsers).Result;
 
             Assert.IsNotNull(result);
             Assert.IsTrue(result.Count == 3);
 
             foreach (var pair in result)
             {
-                Assert.IsTrue(users.Contains(pair.Key));
+                Assert.IsTrue(_sampleUsers.Contains(pair.Key));
                 var userData = pair.Value;
                 Assert.IsNotNull(userData.LastActivity);
                 Assert.IsNotNull(userData.PNL);
@@ -77,6 +78,29 @@ namespace OpenBookNetUnitTest
         public void GetUserFeed()
         {
             throw new NotImplementedException();
+        }
+
+        [TestMethod]
+        public void GetUserPreviewStats()
+        {
+            var result = _client.GetPreviewStats(_sampleUsers[0]).Result;
+
+            Assert.IsNotNull(result.UserPerformance);
+            Assert.IsNotNull(result.Risk);
+            Assert.IsNotNull(result.PNL);
+            Assert.IsNotNull(result.Risk.Values);
+
+            foreach (var value in result.Risk.Values)
+            {
+                Assert.IsNotNull(value);
+            }
+
+            Assert.IsNotNull(result.PNL.Ticks);
+
+            foreach (var tick in result.PNL.Ticks)
+            {
+                Assert.IsNotNull(tick);
+            }
         }
 
         [TestMethod]
