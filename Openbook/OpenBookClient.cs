@@ -112,10 +112,21 @@ namespace OpenBook
                 OpenbookUri.Markets.Category, query);
         }
 
+        /// <summary>
+        ///     Gets preview stats about the specified user.
+        /// </summary>
+        /// <param name="username">A user's username</param>
+        /// <returns><see cref="UserPreviewStatsResult"/></returns>
         public async Task<UserPreviewStatsResult> GetPreviewStats(string username)
         {
             return await GetResult<UserPreviewStatsResult>(
                 OpenbookUri.Users.PreviewStats + username);
+        }
+
+        public async Task<UserProfileDetailsResult> GetProfileDetails(string username)
+        {
+            return await GetResult<UserProfileDetailsResult>(
+                OpenbookUri.Users.ProfileDetails + username);
         }
 
         internal Uri GetQueryUri(string baseUri,

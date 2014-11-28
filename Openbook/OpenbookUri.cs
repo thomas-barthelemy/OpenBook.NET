@@ -78,12 +78,21 @@
 
             /// <summary>
             ///     Gets basic stats information about the specified user.
-            ///     The usernamed is not specified as a GET parameter but in the URI:
+            ///     The username is not specified as a GET parameter but in the URI:
             ///     /PreviewStats/username/
             ///     So the username should be appended after this URI.
             ///     (i.e. var uri = Users.PreviewStats + "username";)
             /// </summary>
             public const string PreviewStats = BaseApiUri + "/PreviewStats/";
+
+            /// <summary>
+            ///     Gets detailed stats about a specific user.
+            ///     The username is not specified as a GET parameter but in the URI:
+            ///     /ProfileDetails/username/
+            ///     So the username should be appended after this URI.
+            ///     (i.e. var uri = Users.ProfileDetails + "username";)
+            /// </summary>
+            public const string ProfileDetails = BaseApiUri + "/ProfileDetails/";
         }
     }
 }

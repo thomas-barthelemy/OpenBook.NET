@@ -104,9 +104,12 @@ namespace OpenBookNetUnitTest
         }
 
         [TestMethod]
-        public void GetUserStats()
+        public void GetUserProfileDetails()
         {
-            throw new NotImplementedException();
+            var result = _client.GetProfileDetails(_sampleUsers[0]).Result;
+
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.User);
         }
 
 // ReSharper disable once UnusedParameter.Local
