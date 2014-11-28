@@ -16,6 +16,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]
 
+// Allow unit test to check internal
+[assembly: InternalsVisibleTo("OpenbookNetUnitTest")]
+
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version

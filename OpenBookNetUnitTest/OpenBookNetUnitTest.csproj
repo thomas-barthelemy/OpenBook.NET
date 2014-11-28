@@ -50,14 +50,24 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Markets.cs" />
-    <Compile Include="People.cs" />
+    <Compile Include="MarketsUnitTests.cs" />
+    <Compile Include="UtilsUnitTests.cs" />
+    <Compile Include="UsersUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Samples\ClientInfo.json" />
+    <None Include="Samples\Market.json" />
+    <None Include="Samples\Markets-Category.json" />
     <None Include="Samples\Rankings.json" />
     <None Include="Samples\Search-AdditionalData.json" />
+    <None Include="Samples\TopPerformers.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Openbook\OpenBook.csproj">
+      <Project>{5C347A60-F68F-4C04-BCA5-4BF58594D62C}</Project>
+      <Name>OpenBook</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
