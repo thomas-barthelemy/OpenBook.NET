@@ -1,0 +1,51 @@
+﻿{
+   "User":{
+      "CID":2013090,
+      "Username":"Dimitrios1",
+      "AllowDisplayFullName":true,
+      "FirstName":"Dimitrios",
+      "LastName":"Mavromanolakis",
+      "URL":"/dimitrios1/",
+      "Country":{
+         "Name":"Greece",
+         "A2":"gr",
+         "Code":82,
+         "PhonePrefix":30
+      },
+      "Avatars":{
+         "Small":"https://s3.etoro.com/images/users-avatars/35X35/2013090/4.jpg",
+         "Medium":"https://s3.etoro.com/images/users-avatars/50X50/2013090/4.jpg",
+         "Large":"https://s3.etoro.com/images/users-avatars/150X150/2013090/4.jpg"
+      },
+      "HasUploadedAvatar":true,
+      "UserType":"User"
+   },
+   "Copiers":523,
+   "Followers":7538,
+   "IsCurrentUserCopy":false,
+   "IsCurrentUserFollow":false,
+   "IsVerifyed":false,
+   "MirrorID":0,
+   "AboutMe":"\"Always invest in REAL VALUES both in life and in your trades. Because REAL VALUES won\u0027t let you down in the long term.\"\n\nHello investors. My 1st priority is to not make losses with your money. Secondly, I seek opportunities for growth. I trade only if I see such opportunities in the markets, not because I have to place some trades on a regular basis. In brief, I aim at a steady long-term sustainable growth.\n\nMany thanks for using at least $100 for copying. I\u0027m happy to answer any questions!",
+   "IsPaused":null,
+   "Resources":{
+      "copy":"Copy",
+      "stopCopying":"Stop Copying",
+      "addRemoveFunds":"Add/Remove Funds",
+      "copying":"Copying",
+      "change":"Change",
+      "edit":"edit your bio",
+      "copiers":"Copiers",
+      "followers":"Followers",
+      "unFollow":"UnFollow",
+      "following":"Following",
+      "follow":"Follow",
+      "viewProfile":"View profile",
+      "aboutMeEmptyPlaceholder":"Write about yourself",
+      "UserCreatedBy":"Created by",
+      "SocialIndex":"Social Index",
+      "SocialIndexInfo":"What is Social Index?",
+      "SocialIndexInfoContent":"Social Index is a special user, which is managing its people-based portfolio on a weekly basis, based on a specific strategy.\nThe components of this Index are users who are being copied via CopyTrader using the weighted amounts defined by the Index."
+   },
+   "CultureCode":"en-gb"
+}
