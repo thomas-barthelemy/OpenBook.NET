@@ -1,20 +1,25 @@
-﻿namespace OpenBook.Models.ApiResults
+﻿using System.Collections.Generic;
+
+namespace OpenBook.Models.ApiResults
 {
     public class UserPositionsResult
     {
         public bool IsHistory { get; set; }
         public bool IsReal { get; set; }
+        public PositionsHolder Positions { get; set; }
 
         public class PositionsHolder : LocalizedResultBase
         {
+            public List<PositionData> Positions { get; set; }
+
             public class PositionData : LocalizedResultBase
             {
                 public int OrderID { get; set; }
                 public string Units { get; set; }
                 public bool IsBuy { get; set; }
                 public Market Market { get; set; }
-                public double StopLoss { get; set; }
-                public double TakeProfit { get; set; }
+                public double? StopLoss { get; set; }
+                public double? TakeProfit { get; set; }
                 public double Amount { get; set; }
                 public double OpenRate { get; set; }
                 public double? CloseRate { get; set; }
