@@ -120,13 +120,37 @@ namespace OpenBook
         public async Task<UserPreviewStatsResult> GetPreviewStats(string username)
         {
             return await GetResult<UserPreviewStatsResult>(
-                OpenbookUri.Users.PreviewStats + username);
+                OpenbookUri.Users.PreviewStats,
+                username);
         }
 
+        /// <summary>
+        ///     Gets the profile details of the specified user.
+        /// </summary>
+        /// <param name="username">A user's username</param>
+        /// <returns><see cref="UserProfileDetailsResult"/></returns>
         public async Task<UserProfileDetailsResult> GetProfileDetails(string username)
         {
             return await GetResult<UserProfileDetailsResult>(
                 OpenbookUri.Users.ProfileDetails + username);
+        }
+
+        /// <summary>
+        ///     Gets the user's position
+        /// </summary>
+        /// <param name="username">A user's username</param>
+        /// <param name="positionType">A position type: (default)Real or Demo</param>
+        /// <param name="positionTime">A position time: (default)Current or History</param>
+        /// <returns><see cref="UserPositionsResult"/></returns>
+        public async Task<UserPositionsResult> GetUserPositions(string username,
+            PositionType positionType = PositionType.Real,
+            PositionTime positionTime = PositionTime.Current)
+        {
+            return await GetResult<UserPositionsResult>(
+                OpenbookUri.Users.Positions,
+                username,
+                positionType.ToString().ToLower(),
+                positionTime.ToString().ToLower());
         }
 
         internal Uri GetQueryUri(string baseUri,
@@ -152,6 +176,12 @@ namespace OpenBook
         protected virtual async Task<string> GetStringAsync(Uri uri)
         {
             return await HttpClient.GetStringAsync(uri);
+        }
+
+        internal async Task<T> GetResult<T>(string baseUri, params string[] path)
+        {
+            var uri = baseUri + string.Join("/", path);
+            return await GetResult<T>(uri);
         }
 
         internal async Task<T> GetResult<T>(string baseUri,
