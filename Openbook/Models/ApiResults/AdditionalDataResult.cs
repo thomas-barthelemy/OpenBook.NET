@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace OpenBook.Models.ApiResults
 {
+    [ComVisible(false)]
     public class AdditionalDataResult : Dictionary<string, AdditionalDataResult.UserData>
     {
         public class UserData
