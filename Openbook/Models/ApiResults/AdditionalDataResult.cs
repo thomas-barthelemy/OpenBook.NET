@@ -23,7 +23,7 @@ namespace OpenBook.Models.ApiResults
                 public bool IsSpam { get; set; }
                 public string ItemType { get; set; }
                 public Market Market { get; set; }
-                public UserData Owner { get; set; }
+                public User.DetailedUser Owner { get; set; }
                 public string PublishDate { get; set; }
 
                 public struct ActivityData
@@ -37,22 +37,6 @@ namespace OpenBook.Models.ApiResults
                     public string Profit;
                     public string Risk;
                     public string TimeStamp;
-                }
-
-                public class UserData : User
-                {
-                    public bool FeedLocked { get; set; }
-                    public long GCID { get; set; }
-                    public bool? IsAllowShareFollow { get; set; }
-                    public bool IsFirstLogin { get; set; }
-                    public long KAID { get; set; }
-                    public bool OptIn { get; set; }
-                    public bool SplitUserStreamAllowed { get; set; }
-                    public string Stars { get; set; }
-                    public string Token { get; set; }
-                    public int TotalCopiers { get; set; }
-                    public int TotalFollows { get; set; }
-                    public string UserType { get; set; }
                 }
             }
 
