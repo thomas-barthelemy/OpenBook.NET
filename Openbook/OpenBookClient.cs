@@ -8,7 +8,7 @@ using OpenBook.Models.ApiResults;
 
 namespace OpenBook
 {
-    public class OpenBookClient
+    public class OpenBookClient : IDisposable
     {
         private readonly HttpClient _client;
 
@@ -138,6 +138,18 @@ namespace OpenBook
             var uri = GetQueryUri(baseUri, queryParams);
             var jsonResult = await _client.GetStringAsync(uri);
             return JsonConvert.DeserializeObject<T>(jsonResult);
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposeManaged)
+        {
+            if (disposeManaged && _client != null)
+                _client.Dispose();
         }
     }
 }
