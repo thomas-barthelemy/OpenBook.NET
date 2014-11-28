@@ -24,4 +24,16 @@
         Currencies,
         Stocks
     }
+
+    public enum PositionType
+    {
+        Real,
+        Demo
+    }
+
+    public enum PositionTime
+    {
+        Current,
+        History
+    }
 }

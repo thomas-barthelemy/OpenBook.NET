@@ -13,12 +13,14 @@
         public const string BaseUri = Protocol + Hostname + "/API";
 
         /// <summary>
-        ///     Gets the top ranking users depending on the filters
+        ///     Gets the top ranking users depending on the filters.
         ///     Known parameters and values:
-        ///         period => Number of days (e.g. 30, 90)
-        ///         riskLevel => low, medium, high
-        ///         sort => copiers, gain
-        ///         pageNumber => (Optional) Page requested (default to 1)
+        /// <code>
+        ///     period => Number of days (e.g. 30, 90)
+        ///     riskLevel => low, medium, high
+        ///     sort => copiers, gain
+        ///     pageNumber => (Optional) Page requested (default to 1)
+        /// </code>
         /// </summary>
         public const string Rankings = BaseUri + "/Rankings/";
 
@@ -37,19 +39,6 @@
             public const string Information = BaseApiUri + "/Information/";
         }
 
-        public static class Search
-        {
-            internal const string BaseApiUri = BaseUri + "/Search";
-
-            /// <summary>
-            ///     Gets details one or more specific users
-            ///     Known parameters and values:
-            ///         usernames => ["username1", "username2", ..., "usernameX"]
-            ///         timeFrame => Number of days (e.g. 30, 90)
-            /// </summary>
-            public const string AdditionalData = BaseApiUri + "/AdditionalData/";
-        }
-
         public static class Markets
         {
             internal const string BaseApiUri = BaseUri + "/Markets";
@@ -61,15 +50,33 @@
             /// <remarks>
             ///     Surprisingly any unknown sub query of /Markets will give
             ///     this same result.
-            /// </remarks>>
+            /// </remarks>
+            /// >
             public const string Index = BaseApiUri + "/index";
 
             /// <summary>
             ///     Gets a set of featured specified symbol.
             ///     Known Parameters and values:
-            ///         category => currencies, stocks, commodities
+            /// <code>
+            ///     category => currencies, stocks, commodities
+            /// </code>
             /// </summary>
             public const string Category = BaseApiUri + "/Category";
+        }
+
+        public static class Search
+        {
+            internal const string BaseApiUri = BaseUri + "/Search";
+
+            /// <summary>
+            ///     Gets details one or more specific users.
+            ///     Known parameters and values:
+            /// <code>
+            ///     usernames => ["username1", "username2", ..., "usernameX"]
+            ///     timeFrame => Number of days (e.g. 30, 90)
+            /// </code>
+            /// </summary>
+            public const string AdditionalData = BaseApiUri + "/AdditionalData/";
         }
 
         public static class Users
@@ -79,20 +86,26 @@
             /// <summary>
             ///     Gets basic stats information about the specified user.
             ///     The username is not specified as a GET parameter but in the URI:
-            ///     /PreviewStats/username/
-            ///     So the username should be appended after this URI.
-            ///     (i.e. var uri = Users.PreviewStats + "username";)
+            ///     <code>var uri = PreviewStats + "username";</code>
             /// </summary>
             public const string PreviewStats = BaseApiUri + "/PreviewStats/";
 
             /// <summary>
             ///     Gets detailed stats about a specific user.
             ///     The username is not specified as a GET parameter but in the URI:
-            ///     /ProfileDetails/username/
-            ///     So the username should be appended after this URI.
-            ///     (i.e. var uri = Users.ProfileDetails + "username";)
+            ///     <code>var uri = ProfileDetails + "username";</code>
             /// </summary>
             public const string ProfileDetails = BaseApiUri + "/ProfileDetails/";
+
+            /// <summary>
+            ///     Gets the positions of a specific user.
+            /// <code>
+            ///     /Positions/username/demo/current
+            ///     /Positions/username/real/history
+            /// </code>
+            /// <code>var uri = Positions + "real" + "/" + "current"</code>
+            /// </summary>
+            public const string Positions = BaseApiUri + "/Positions/";
         }
     }
 }
