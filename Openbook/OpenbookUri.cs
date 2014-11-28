@@ -6,7 +6,7 @@
     /// <remarks>
     ///     APIs seems to take a '_' parameter that seems to be the current user token
     /// </remarks>
-    public struct OpenbookUri
+    public static class OpenbookUri
     {
         public const string Protocol = "https://";
         public const string Hostname = "openbook.etoro.com";
@@ -27,7 +27,7 @@
         /// </summary>
         public const string TopPerformers = Rankings + "/TopPerformers/";
 
-        public struct ClientInformation
+        public static class ClientInformation
         {
             internal const string BaseApiUri = BaseUri + "/ClientInformation/";
 
@@ -37,7 +37,7 @@
             public const string Information = BaseApiUri + "/Information/";
         }
 
-        public struct Search
+        public static class Search
         {
             internal const string BaseApiUri = BaseUri + "/Search";
 
@@ -50,7 +50,7 @@
             public const string AdditionalData = BaseApiUri + "/AdditionalData/";
         }
 
-        public struct Markets
+        public static class Markets
         {
             internal const string BaseApiUri = BaseUri + "/Markets";
 
@@ -70,6 +70,20 @@
             ///         category => currencies, stocks, commodities
             /// </summary>
             public const string Category = BaseApiUri + "/Category";
+        }
+
+        public static class Users
+        {
+            internal const string BaseApiUri = BaseUri + "/Users";
+
+            /// <summary>
+            ///     Gets basic stats information about the specified user.
+            ///     The usernamed is not specified as a GET parameter but in the URI:
+            ///     /PreviewStats/username/
+            ///     So the username should be appended after this URI.
+            ///     (i.e. var uri = Users.PreviewStats + "username";)
+            /// </summary>
+            public const string PreviewStats = BaseApiUri + "/PreviewStats/";
         }
     }
 }
