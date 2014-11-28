@@ -10,11 +10,11 @@ namespace OpenBook
 {
     public class OpenBookClient : IDisposable
     {
-        private readonly HttpClient _client;
+        private HttpClient _client;
 
-        public OpenBookClient()
+        private HttpClient HttpClient
         {
-            _client = new HttpClient();
+            get { return _client ?? (_client = new HttpClient()); }
         }
 
         /// <summary>
@@ -132,11 +132,22 @@ namespace OpenBook
             return builder.Uri;
         }
 
+        /// <summary>
+        ///     Sends a GET request to the specified Uri and returns the response
+        ///     body as a string in an asynchronous operation.
+        ///     By default this uses HttpClient.GetStringAsync(...) but this method
+        ///     can be overridden to customize how the requests are made.
+        /// </summary>
+        protected virtual async Task<string> GetStringAsync(Uri uri)
+        {
+            return await HttpClient.GetStringAsync(uri);
+        }
+
         internal async Task<T> GetResult<T>(string baseUri,
             IDictionary<string, string> queryParams = null)
         {
             var uri = GetQueryUri(baseUri, queryParams);
-            var jsonResult = await _client.GetStringAsync(uri);
+            var jsonResult = await GetStringAsync(uri);
             return JsonConvert.DeserializeObject<T>(jsonResult);
         }
 
