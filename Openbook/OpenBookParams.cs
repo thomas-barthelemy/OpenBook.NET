@@ -22,7 +22,8 @@
     {
         Commodities,
         Currencies,
-        Stocks
+        Stocks,
+        Indicies
     }
 
     public enum PositionType
