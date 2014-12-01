@@ -4,9 +4,10 @@ using System.Runtime.InteropServices;
 namespace OpenBook.Models.ApiResults
 {
     [ComVisible(false)]
-    public class AdditionalDataResult : Dictionary<string, AdditionalDataResult.UserData>
+    public class AdditionalDataResult
+        : Dictionary<string, AdditionalDataResult.UserAdditionalData>
     {
-        public class UserData
+        public class UserAdditionalData
         {
             public int CopiersLastWeek { get; set; }
             public LastActivityData LastActivity { get; set; }
@@ -22,7 +23,7 @@ namespace OpenBook.Models.ApiResults
                 public bool IsSpam { get; set; }
                 public string ItemType { get; set; }
                 public Market Market { get; set; }
-                public User Owner { get; set; }
+                public User.DetailedUser Owner { get; set; }
                 public string PublishDate { get; set; }
 
                 public struct ActivityData

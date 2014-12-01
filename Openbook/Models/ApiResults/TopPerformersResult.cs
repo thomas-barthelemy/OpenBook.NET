@@ -16,7 +16,7 @@ namespace OpenBook.Models.ApiResults
 
             public class TopUserData : LocalizedResultBase
             {
-                public User User { get; set; }
+                public UserData User { get; set; }
                 public RankingData Ranking { get; set; }
                 public int Followers { get; set; }
 
@@ -24,6 +24,12 @@ namespace OpenBook.Models.ApiResults
                 {
                     public int Rank;
                     public double Gain;
+                }
+
+                public class UserData : User
+                {
+                    public bool HasUploadedAvatar { get; set; }
+                    public string UserType { get; set; }
                 }
             }
         }

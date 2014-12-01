@@ -10,11 +10,11 @@ namespace OpenBook
 {
     public class OpenBookClient : IDisposable
     {
-        private readonly HttpClient _client;
+        private HttpClient _client;
 
-        public OpenBookClient()
+        private HttpClient HttpClient
         {
-            _client = new HttpClient();
+            get { return _client ?? (_client = new HttpClient()); }
         }
 
         /// <summary>
@@ -112,10 +112,45 @@ namespace OpenBook
                 OpenbookUri.Markets.Category, query);
         }
 
+        /// <summary>
+        ///     Gets preview stats about the specified user.
+        /// </summary>
+        /// <param name="username">A user's username</param>
+        /// <returns><see cref="UserPreviewStatsResult"/></returns>
         public async Task<UserPreviewStatsResult> GetPreviewStats(string username)
         {
             return await GetResult<UserPreviewStatsResult>(
-                OpenbookUri.Users.PreviewStats + username);
+                OpenbookUri.Users.PreviewStats,
+                username);
+        }
+
+        /// <summary>
+        ///     Gets the profile details of the specified user.
+        /// </summary>
+        /// <param name="username">A user's username</param>
+        /// <returns><see cref="UserProfileDetailsResult"/></returns>
+        public async Task<UserProfileDetailsResult> GetProfileDetails(string username)
+        {
+            return await GetResult<UserProfileDetailsResult>(
+                OpenbookUri.Users.ProfileDetails + username);
+        }
+
+        /// <summary>
+        ///     Gets the user's position
+        /// </summary>
+        /// <param name="username">A user's username</param>
+        /// <param name="positionType">A position type: (default)Real or Demo</param>
+        /// <param name="positionTime">A position time: (default)Current or History</param>
+        /// <returns><see cref="UserPositionsResult"/></returns>
+        public async Task<UserPositionsResult> GetUserPositions(string username,
+            PositionType positionType = PositionType.Real,
+            PositionTime positionTime = PositionTime.Current)
+        {
+            return await GetResult<UserPositionsResult>(
+                OpenbookUri.Users.Positions,
+                username,
+                positionType.ToString().ToLower(),
+                positionTime.ToString().ToLower());
         }
 
         internal Uri GetQueryUri(string baseUri,
@@ -132,11 +167,28 @@ namespace OpenBook
             return builder.Uri;
         }
 
+        /// <summary>
+        ///     Sends a GET request to the specified Uri and returns the response
+        ///     body as a string in an asynchronous operation.
+        ///     By default this uses HttpClient.GetStringAsync(...) but this method
+        ///     can be overridden to customize how the requests are made.
+        /// </summary>
+        protected virtual async Task<string> GetStringAsync(Uri uri)
+        {
+            return await HttpClient.GetStringAsync(uri);
+        }
+
+        internal async Task<T> GetResult<T>(string baseUri, params string[] path)
+        {
+            var uri = baseUri + string.Join("/", path);
+            return await GetResult<T>(uri);
+        }
+
         internal async Task<T> GetResult<T>(string baseUri,
             IDictionary<string, string> queryParams = null)
         {
             var uri = GetQueryUri(baseUri, queryParams);
-            var jsonResult = await _client.GetStringAsync(uri);
+            var jsonResult = await GetStringAsync(uri);
             return JsonConvert.DeserializeObject<T>(jsonResult);
         }
 

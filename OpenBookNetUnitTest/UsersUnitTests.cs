@@ -7,13 +7,18 @@ using OpenBook.Models.ApiResults;
 namespace OpenBookNetUnitTest
 {
     /// <summary>
-    /// Users related unit tests
+    ///     Users related unit tests
     /// </summary>
     [TestClass]
     public class UsersUnitTests
     {
         private readonly OpenBookClient _client = new OpenBookClient();
-        private readonly string[] _sampleUsers = { "BestTraders", "Dimitrios1", "Greenlander88" };
+
+        private readonly string[] _sampleUsers =
+        {
+            "BestTraders", "Dimitrios1",
+            "Greenlander88"
+        };
 
 
         [TestMethod]
@@ -104,19 +109,62 @@ namespace OpenBookNetUnitTest
         }
 
         [TestMethod]
-        public void GetUserStats()
+        public void GetUserProfileDetails()
         {
-            throw new NotImplementedException();
+            var result = _client.GetProfileDetails(_sampleUsers[0]).Result;
+
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.User);
         }
 
-// ReSharper disable once UnusedParameter.Local
-// Reason: Factorization method
+        [TestMethod]
+        public void GetUserPositions_Default()
+        {
+            var result = _client.GetUserPositions(_sampleUsers[0]).Result;
+            CheckPositionResult(result);
+        }
+
+        [TestMethod]
+        public void GetUserPositions_Demo()
+        {
+            var result =
+                _client.GetUserPositions(_sampleUsers[0],
+                    PositionType.Demo).Result;
+            CheckPositionResult(result);
+        }
+
+        [TestMethod]
+        public void GetUserPositions_History()
+        {
+            var result =
+                _client.GetUserPositions(_sampleUsers[0],
+                    positionTime: PositionTime.History).Result;
+            CheckPositionResult(result);
+        }
+
         private static void CheckRankingResult(RankingResult result)
         {
             Assert.IsNotNull(result);
             Assert.IsTrue(result.Count != 0);
             Assert.IsNotNull(result.Users);
             Assert.IsTrue(result.Users.Count > 0);
+
+            foreach (var user in result.Users)
+            {
+                Assert.IsNotNull(user);
+            }
+        }
+
+        private static void CheckPositionResult(UserPositionsResult result)
+        {
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.Positions);
+            Assert.IsNotNull(result.Positions.Positions);
+            foreach (var position in result.Positions.Positions)
+            {
+                Assert.IsNotNull(position);
+                Assert.IsNotNull(position.ParentUser);
+            }
         }
     }
 }

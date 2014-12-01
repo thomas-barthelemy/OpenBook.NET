@@ -39,7 +39,9 @@
     <Compile Include="Models\ApiResults\FeaturedSymbolsResult.cs" />
     <Compile Include="Models\ApiResults\MarketCategoriesResult.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
+    <Compile Include="Models\ApiResults\UserPositionsResult.cs" />
     <Compile Include="Models\ApiResults\UserPreviewStatsResult.cs" />
+    <Compile Include="Models\ApiResults\UserProfileDetailsResult.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Market.cs" />
     <Compile Include="Models\Pagination.cs" />

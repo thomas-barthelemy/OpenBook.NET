@@ -22,6 +22,19 @@
     {
         Commodities,
         Currencies,
-        Stocks
+        Stocks,
+        Indicies
+    }
+
+    public enum PositionType
+    {
+        Real,
+        Demo
+    }
+
+    public enum PositionTime
+    {
+        Current,
+        History
     }
 }
