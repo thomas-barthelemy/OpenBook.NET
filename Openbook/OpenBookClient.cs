@@ -12,7 +12,10 @@ namespace OpenBook
     {
         private HttpClient _client;
 
-        private HttpClient HttpClient => _client ?? (_client = new HttpClient());
+        private HttpClient HttpClient
+        {
+            get { return _client ?? (_client = new HttpClient()); }
+        }
 
         /// <summary>
         ///     Gets the top ranking users for the specified risk level.
@@ -197,8 +200,8 @@ namespace OpenBook
 
         protected virtual void Dispose(bool disposeManaged)
         {
-            if (disposeManaged)
-                _client?.Dispose();
+            if (disposeManaged && _client != null)
+                _client.Dispose();
         }
     }
 }
