@@ -20,10 +20,10 @@
 
     public enum MarketCategory
     {
-        Commodities,
-        Currencies,
-        Stocks,
-        Indicies
+        Currencies = 1,
+        Commodities = 2,
+        Indicies = 3,
+        Stocks = 4
     }
 
     public enum PositionType

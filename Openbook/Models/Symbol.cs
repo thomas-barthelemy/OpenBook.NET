@@ -12,7 +12,7 @@ namespace OpenBook.Models
         public bool IsTradable { get; set; }
         public string MarketName { get; set; }
         public string Name { get; set; }
-        public int Type { get; set; }
+        public MarketCategory Type { get; set; }
         public string TypeName { get; set; }
 
         public struct InvestmentCounterData

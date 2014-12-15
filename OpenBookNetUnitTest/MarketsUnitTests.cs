@@ -30,6 +30,7 @@ namespace OpenBookNetUnitTest
                 {
                     Assert.IsNotNull(symbol.Symbol);
                     Assert.IsNotNull(symbol.SymbolRatesModel);
+                    Assert.IsInstanceOfType(symbol.Symbol.Type, typeof(MarketCategory));
                 }
             }
 
