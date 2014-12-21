@@ -81,12 +81,6 @@ namespace OpenBookNetUnitTest
         }
 
         [TestMethod]
-        public void GetUserFeed()
-        {
-            throw new NotImplementedException();
-        }
-
-        [TestMethod]
         public void GetUserPreviewStats()
         {
             var result = _client.GetPreviewStats(_sampleUsers[0]).Result;

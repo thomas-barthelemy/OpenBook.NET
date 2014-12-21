@@ -1,6 +1,6 @@
 ﻿namespace OpenBook.Models.ApiResults.UserAdditionalData
 {
-    public struct ActivityData
+    public struct Activity
     {
         public string GUID;
         public bool IsBuy;

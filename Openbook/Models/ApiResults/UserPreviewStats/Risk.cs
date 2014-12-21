@@ -2,7 +2,7 @@
 
 namespace OpenBook.Models.ApiResults.UserPreviewStats
 {
-    public class RiskData : LocalizedResultBase
+    public class Risk : LocalizedResultBase
     {
         public List<ValueData> Values { get; set; }
     }

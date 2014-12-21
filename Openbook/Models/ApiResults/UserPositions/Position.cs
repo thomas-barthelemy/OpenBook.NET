@@ -1,6 +1,6 @@
 ﻿namespace OpenBook.Models.ApiResults.UserPositions
 {
-    public class PositionData : LocalizedResultBase
+    public class Position : LocalizedResultBase
     {
         public int OrderID { get; set; }
         public string Units { get; set; }
@@ -14,7 +14,7 @@
         public string NetProfit { get; set; }
         public string Gain { get; set; }
         public string CloseDate { get; set; }
-        public User.DetailedUser ParentUser { get; set; }
+        public DetailedUser ParentUser { get; set; }
         public string CloseReason { get; set; }
         public string OpenDate { get; set; }
         public long PositionId { get; set; }

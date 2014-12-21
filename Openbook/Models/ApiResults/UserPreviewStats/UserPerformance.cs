@@ -1,6 +1,6 @@
 ﻿namespace OpenBook.Models.ApiResults.UserPreviewStats
 {
-    public class UserPerformanceData : LocalizedResultBase
+    public class UserPerformance : LocalizedResultBase
     {
         public double Gain { get; set; }
         public double GainPercentage { get; set; }

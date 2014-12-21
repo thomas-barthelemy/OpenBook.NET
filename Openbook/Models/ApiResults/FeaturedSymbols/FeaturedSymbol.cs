@@ -1,8 +1,8 @@
 ﻿namespace OpenBook.Models.ApiResults.FeaturedSymbols
 {
-    public class SymbolsData
+    public class FeaturedSymbol
     {
         public Symbol Symbol { get; set; }
-        public SymbolRatesModel SymbolRatesModel { get; set; }
+        public FeaturedSymbolRatesModel SymbolRatesModel { get; set; }
     }
 }

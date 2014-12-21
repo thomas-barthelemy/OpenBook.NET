@@ -2,7 +2,7 @@
 {
     public class UserProfileDetailsResult : LocalizedResultBase
     {
-        public UserData User { get; set; }
+        public ProfileUser User { get; set; }
         public int Copiers { get; set; }
         public int Followers { get; set; }
         public bool IsCurrentUserCopy { get; set; }

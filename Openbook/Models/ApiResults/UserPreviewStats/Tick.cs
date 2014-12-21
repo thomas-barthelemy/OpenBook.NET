@@ -2,7 +2,7 @@
 
 namespace OpenBook.Models.ApiResults.UserPreviewStats
 {
-    public struct TickData
+    public struct Tick
     {
         [JsonProperty(PropertyName = "x")]
         public string X;

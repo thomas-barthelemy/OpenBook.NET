@@ -2,8 +2,8 @@
 {
     public class UserPreviewStatsResult
     {
-        public RiskData Risk { get; set; }
-        public PNLData PNL { get; set; }
-        public UserPerformanceData UserPerformance { get; set; }
+        public Risk Risk { get; set; }
+        public PNL PNL { get; set; }
+        public UserPerformance UserPerformance { get; set; }
     }
 }

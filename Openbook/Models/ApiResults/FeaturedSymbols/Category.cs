@@ -2,9 +2,9 @@
 
 namespace OpenBook.Models.ApiResults.FeaturedSymbols
 {
-    public class CategoryData
+    public class Category
     {
         public string Type { get; set; }
-        public List<SymbolsData> Symbols { get; set; }
+        public List<FeaturedSymbol> Symbols { get; set; }
     }
 }

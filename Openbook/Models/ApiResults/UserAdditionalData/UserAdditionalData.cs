@@ -3,7 +3,7 @@
     public class UserAdditionalData
     {
         public int CopiersLastWeek { get; set; }
-        public LastActivityData LastActivity { get; set; }
-        public PNLData PNL { get; set; }
+        public LastActivity LastActivity { get; set; }
+        public PNL PNL { get; set; }
     }
 }

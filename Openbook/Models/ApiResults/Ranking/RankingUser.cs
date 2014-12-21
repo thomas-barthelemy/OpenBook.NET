@@ -1,6 +1,6 @@
 ﻿namespace OpenBook.Models.ApiResults.Ranking
 {
-    public class UserData : User
+    public class RankingUserBase : UserBase
     {
         public double ProfitableWeeks { get; set; }
         public double MaxDrawDown { get; set; }

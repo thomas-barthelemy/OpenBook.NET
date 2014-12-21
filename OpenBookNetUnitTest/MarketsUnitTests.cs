@@ -63,18 +63,6 @@ namespace OpenBookNetUnitTest
             CheckCategorizedFeaturedSymbol(result);
         }
 
-        [TestMethod]
-        public void GetCurrencyFeed()
-        {
-            throw new NotImplementedException();
-        }
-
-        [TestMethod]
-        public void GetCommodityFeed()
-        {
-            throw new NotImplementedException();
-        }
-
         private void CheckCategorizedFeaturedSymbol(MarketCategoriesResult result)
         {
             Assert.IsNotNull(result);

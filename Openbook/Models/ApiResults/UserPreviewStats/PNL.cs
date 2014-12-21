@@ -2,10 +2,10 @@
 
 namespace OpenBook.Models.ApiResults.UserPreviewStats
 {
-    public class PNLData : LocalizedResultBase
+    public class PNL : LocalizedResultBase
     {
         public string StartDate { get; set; }
         public int Interval { get; set; }
-        public List<TickData> Ticks { get; set; }
+        public List<Tick> Ticks { get; set; }
     }
 }

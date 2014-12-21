@@ -1,6 +1,6 @@
 ﻿namespace OpenBook.Models.ApiResults.MarketCategories
 {
-    public struct RatesData
+    public struct Rates
     {
         public double Ask;
         public double Bid;

@@ -2,7 +2,7 @@
 
 namespace OpenBook.Models.ApiResults.TopPerformers
 {
-    public class TopPerformerData : LocalizedResultBase
+    public class TopPerformer : LocalizedResultBase
     {
         public int RankingType { get; set; }
         public string Title { get; set; }

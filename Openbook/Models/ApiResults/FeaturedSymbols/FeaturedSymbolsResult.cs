@@ -4,7 +4,7 @@ namespace OpenBook.Models.ApiResults.FeaturedSymbols
 {
     public class FeaturedSymbolsResult
     {
-        public List<SymbolsData> FeaturedSymbols { get; set; }
-        public List<CategoryData> Categories { get; set; }
+        public List<FeaturedSymbol> FeaturedSymbols { get; set; }
+        public List<Category> Categories { get; set; }
     }
 }
