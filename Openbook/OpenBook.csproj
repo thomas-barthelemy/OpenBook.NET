@@ -34,14 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Models\ApiResults\AdditionalDataResult.cs" />
+    <Compile Include="Models\ApiResults\FeaturedSymbols\CategoryData.cs" />
+    <Compile Include="Models\ApiResults\FeaturedSymbols\FeaturedSymbolsResult.cs" />
+    <Compile Include="Models\ApiResults\FeaturedSymbols\SymbolsData.cs" />
+    <Compile Include="Models\ApiResults\FeaturedSymbols\SymbolsRateModel.cs" />
     <Compile Include="Models\ApiResults\LocalizedResultBase.cs" />
-    <Compile Include="Models\ApiResults\FeaturedSymbolsResult.cs" />
     <Compile Include="Models\ApiResults\MarketCategories\MarketCategoriesResult.cs" />
     <Compile Include="Models\ApiResults\MarketCategories\RatesData.cs" />
     <Compile Include="Models\ApiResults\MarketCategories\SymbolData.cs" />
     <Compile Include="Models\ApiResults\MarketCategories\SymbolRatesModelData.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
+    <Compile Include="Models\ApiResults\UserAdditionalData\ActivityData.cs" />
+    <Compile Include="Models\ApiResults\UserAdditionalData\UserAdditionalDataResult.cs" />
+    <Compile Include="Models\ApiResults\UserAdditionalData\LastActivityData.cs" />
+    <Compile Include="Models\ApiResults\UserAdditionalData\PNLData.cs" />
+    <Compile Include="Models\ApiResults\UserAdditionalData\UserAdditionalData.cs" />
     <Compile Include="Models\ApiResults\UserPositionsResult.cs" />
     <Compile Include="Models\ApiResults\UserPreviewStatsResult.cs" />
     <Compile Include="Models\ApiResults\UserProfileDetailsResult.cs" />
