@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenBook;
 using OpenBook.Models.ApiResults;
+using OpenBook.Models.ApiResults.MarketCategories;
 
 namespace OpenBookNetUnitTest
 {

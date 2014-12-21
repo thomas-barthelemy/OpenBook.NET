@@ -37,7 +37,10 @@
     <Compile Include="Models\ApiResults\AdditionalDataResult.cs" />
     <Compile Include="Models\ApiResults\LocalizedResultBase.cs" />
     <Compile Include="Models\ApiResults\FeaturedSymbolsResult.cs" />
-    <Compile Include="Models\ApiResults\MarketCategoriesResult.cs" />
+    <Compile Include="Models\ApiResults\MarketCategories\MarketCategoriesResult.cs" />
+    <Compile Include="Models\ApiResults\MarketCategories\RatesData.cs" />
+    <Compile Include="Models\ApiResults\MarketCategories\SymbolData.cs" />
+    <Compile Include="Models\ApiResults\MarketCategories\SymbolRatesModelData.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
     <Compile Include="Models\ApiResults\UserPositionsResult.cs" />
     <Compile Include="Models\ApiResults\UserPreviewStatsResult.cs" />
