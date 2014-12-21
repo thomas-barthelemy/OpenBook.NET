@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using OpenBook.Models.ApiResults;
 using OpenBook.Models.ApiResults.MarketCategories;
+using OpenBook.Models.ApiResults.UserAdditionalData;
 
 namespace OpenBook
 {
@@ -62,9 +63,9 @@ namespace OpenBook
         ///     (Default: 30 days)
         /// </param>
         /// <returns>
-        ///     <see cref="AdditionalDataResult" />
+        ///     <see cref="UserAdditionalDataResult" />
         /// </returns>
-        public async Task<AdditionalDataResult> GetAdditionalData(
+        public async Task<UserAdditionalDataResult> GetAdditionalData(
             ICollection<string> usernames, int period = 30)
         {
             var userParam = "[\"" + string.Join("\", \"", usernames) + "\"]";
@@ -74,7 +75,7 @@ namespace OpenBook
                 {"usernames", userParam}
             };
 
-            return await GetResult<AdditionalDataResult>(
+            return await GetResult<UserAdditionalDataResult>(
                 OpenbookUri.Search.AdditionalData, query);
         }
 
