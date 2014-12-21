@@ -4,11 +4,14 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using OpenBook.Models.ApiResults;
 using OpenBook.Models.ApiResults.FeaturedSymbols;
 using OpenBook.Models.ApiResults.MarketCategories;
 using OpenBook.Models.ApiResults.Ranking;
+using OpenBook.Models.ApiResults.TopPerformers;
 using OpenBook.Models.ApiResults.UserAdditionalData;
+using OpenBook.Models.ApiResults.UserPositions;
+using OpenBook.Models.ApiResults.UserPreviewStats;
+using OpenBook.Models.ApiResults.UserProfileDetails;
 
 namespace OpenBook
 {

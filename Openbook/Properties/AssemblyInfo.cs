@@ -16,7 +16,7 @@ using System.Runtime.CompilerServices;
 [assembly: NeutralResourcesLanguage("en")]
 
 // Allow unit test to check internal
-[assembly: InternalsVisibleTo("OpenbookNetUnitTest")]
+[assembly: InternalsVisibleTo("OpenBookNetUnitTest")]
 
 // Version information for an assembly consists of the following four values:
 //

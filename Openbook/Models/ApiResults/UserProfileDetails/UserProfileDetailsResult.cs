@@ -1,4 +1,4 @@
-﻿namespace OpenBook.Models.ApiResults
+﻿namespace OpenBook.Models.ApiResults.UserProfileDetails
 {
     public class UserProfileDetailsResult : LocalizedResultBase
     {
@@ -11,11 +11,5 @@
         public int MirrorID { get; set; }
         public string AboutMe { get; set; }
         public bool? IsPaused { get; set; }
-
-        public class UserData : User
-        {
-            public bool HasUploadedAvatar { get; set; }
-            public string UserType { get; set; }
-        }
     }
 }

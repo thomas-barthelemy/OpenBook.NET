@@ -2,8 +2,8 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenBook;
-using OpenBook.Models.ApiResults;
 using OpenBook.Models.ApiResults.Ranking;
+using OpenBook.Models.ApiResults.UserPositions;
 
 namespace OpenBookNetUnitTest
 {
