@@ -43,6 +43,8 @@
     <Compile Include="Models\ApiResults\MarketCategories\RatesData.cs" />
     <Compile Include="Models\ApiResults\MarketCategories\SymbolData.cs" />
     <Compile Include="Models\ApiResults\MarketCategories\SymbolRatesModelData.cs" />
+    <Compile Include="Models\ApiResults\Ranking\RankingResult.cs" />
+    <Compile Include="Models\ApiResults\Ranking\UserData.cs" />
     <Compile Include="Models\ApiResults\TopPerformersResult.cs" />
     <Compile Include="Models\ApiResults\UserAdditionalData\ActivityData.cs" />
     <Compile Include="Models\ApiResults\UserAdditionalData\UserAdditionalDataResult.cs" />
@@ -55,7 +57,6 @@
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Market.cs" />
     <Compile Include="Models\Pagination.cs" />
-    <Compile Include="Models\ApiResults\RankingResult.cs" />
     <Compile Include="Models\Symbol.cs" />
     <Compile Include="OpenBookClient.cs" />
     <Compile Include="OpenBookParams.cs" />

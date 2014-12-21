@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using OpenBook.Models.ApiResults;
 using OpenBook.Models.ApiResults.FeaturedSymbols;
 using OpenBook.Models.ApiResults.MarketCategories;
+using OpenBook.Models.ApiResults.Ranking;
 using OpenBook.Models.ApiResults.UserAdditionalData;
 
 namespace OpenBook
