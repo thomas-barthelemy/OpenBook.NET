@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenBook;
 using OpenBook.Models.ApiResults.MarketCategories;
 
@@ -73,7 +72,9 @@ namespace OpenBookNetUnitTest
                 Assert.IsNotNull(symbol);
                 Assert.IsNotNull(symbol.Symbol);
                 Assert.IsNotNull(symbol.SymbolRatesModel);
-                Assert.IsNotNull(symbol.SymbolRatesModel.Rates);
+
+                if(symbol.Symbol.Type != MarketCategory.Stocks)
+                    Assert.IsNotNull(symbol.SymbolRatesModel.Rates);
             }
         }
     }

@@ -1,12 +1,12 @@
 ﻿namespace OpenBook.Models.ApiResults.MarketCategories
 {
-    public struct Rates
+    public class Rates
     {
-        public double Ask;
-        public double Bid;
-        public int InstrumentID;
-        public double? PeriodChangePrecent;
-        public double? PeriodChangeValue;
-        public double Precision;
+        public double Ask { get; set; }
+        public double Bid { get; set; }
+        public int InstrumentID { get; set; }
+        public double? PeriodChangePrecent { get; set; }
+        public double? PeriodChangeValue { get; set; }
+        public double Precision { get; set; }
     }
 }

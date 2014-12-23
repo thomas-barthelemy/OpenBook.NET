@@ -1,9 +1,9 @@
 ﻿namespace OpenBook.Models
 {
-    public struct UserAvatars
+    public class UserAvatars
     {
-        public string Small;
-        public string Medium;
-        public string Large;
+        public string Medium { get; set; }
+        public string Large { get; set; }
+        public string Small { get; set; }
     }
 }

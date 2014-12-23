@@ -1,10 +1,10 @@
 ﻿namespace OpenBook.Models
 {
-    public struct Country
+    public class Country
     {
-        public string Name;
-        public string A2;
-        public int Code;
-        public int PhonePrefix;
+        public string Name { get; set; }
+        public string A2 { get; set; }
+        public int Code { get; set; }
+        public int PhonePrefix { get; set; }
     }
 }

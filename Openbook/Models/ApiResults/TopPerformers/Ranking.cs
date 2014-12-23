@@ -1,8 +1,8 @@
 ﻿namespace OpenBook.Models.ApiResults.TopPerformers
 {
-    public struct Ranking
+    public class Ranking
     {
-        public int Rank;
-        public double Gain;
+        public int Rank { get; set; }
+        public double Gain { get; set; }
     }
 }
